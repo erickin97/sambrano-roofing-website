@@ -1,0 +1,13 @@
+# macOS Finder metadata
+.DS_Store
+
+# Netlify CLI local state (not used yet, ignored in case it ever is)
+.netlify/
+
+# Claude Code local-only settings (session-specific permissions allowlist,
+# not part of the website project itself)
+.claude/settings.local.json
+
+# Editor/OS junk
+*.swp
+Thumbs.db

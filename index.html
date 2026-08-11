@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tucson Roofing Contractors | Sambrano Roofing & Exterior LLC</title>
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <meta name="description" content="Sambrano Roofing & Exterior LLC is a licensed Tucson, AZ roofing contractor (ROC #367370, CR-42 Roofing) specializing in tile lift & reset, roof coatings, and full shingle roof systems.">
+
+    <!-- Performance: preload the LCP asset (hero poster) -->
+    <link rel="preload" as="image" href="assets/video/poster.jpg" fetchpriority="high">
+    <link rel="preload" as="video" href="assets/video/hero.mp4" type="video/mp4">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lexend+Deca:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --charcoal: #12161A;
+            --charcoal-muted: #1A1F26;
+            --deep-blue: #0A192F;
+            --accent-gold: #C9A227;
+            --accent-gold-hover: #AD8A20;
+            --text-light: #F4F5F6;
+            --text-dark: #12161A;
+            --text-muted: #64748B;
+            --border-color: #2A3342;
+            --font-sans: 'Inter', sans-serif;
+            --font-heading: 'Lexend Deca', sans-serif;
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+            background-color: var(--charcoal);
+            color: var(--text-light);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        p {
+            font-weight: 300;
+            color: #94A3B8;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        /* Layout Components */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 8rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-header {
+            max-width: 640px;
+            margin-bottom: 4rem;
+        }
+
+        .section-badge {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent-gold);
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem 2rem;
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-gold);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-gold-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px -6px rgba(201, 162, 39, 0.45);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(8px);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--white);
+            background-color: rgba(255, 255, 255, 0.05);
+            transform: translateY(-2px);
+        }
+
+        /* Navigation */
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(18, 22, 26, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 90px;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+        }
+
+        .brand-logo img {
+            height: 56px;
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        /* Logo theme swap: defaults to the white knockout logo (used on the
+           white-on-transparent asset) for our dark sections; any future
+           light-background section just needs class="theme-light" and the
+           .logo-mark img automatically swaps to logo-color.png */
+        .logo-mark {
+            content: url("assets/logo/logo-white.png");
+        }
+
+        .theme-light .logo-mark {
+            content: url("assets/logo/logo-color.png");
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-name {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--white);
+            letter-spacing: -0.01em;
+        }
+
+        .brand-sub {
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: #94A3B8;
+        }
+
+        .nav-link:hover {
+            color: var(--white);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 700px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            overflow: hidden;
+            background-color: var(--deep-blue);
+        }
+
+        .hero-video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-size: cover;
+            background-position: center;
+            background-color: var(--deep-blue);
+        }
+
+        .hero-bg-video,
+        .hero-fallback-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0;
+            transition: opacity 1.2s ease;
+        }
+
+        .hero-bg-video.is-ready,
+        .hero-fallback-img.is-active {
+            opacity: 0.55;
+        }
+
+        /* Subtle dark gradient overlay so hero text always stays readable */
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            z-index: 2;
+            background: linear-gradient(135deg, rgba(10,25,47,0.74) 0%, rgba(18,22,26,0.64) 55%, rgba(18,22,26,0.75) 100%);
+            pointer-events: none;
+        }
+
+        .hero-logo-badge {
+            width: 110px;
+            height: auto;
+            margin-bottom: 2rem;
+            filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45));
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 3;
+        }
+
+        .hero-content {
+            max-width: 780px;
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.9s ease, transform 0.9s ease;
+        }
+
+        .hero-content.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: var(--white);
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #E2E8F0;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-call {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem 1.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #CBD5E1;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 4px;
+            background: transparent;
+            transition: var(--transition);
+        }
+
+        .btn-call svg {
+            width: 16px;
+            height: 16px;
+            stroke: var(--accent-gold);
+            flex-shrink: 0;
+        }
+
+        .btn-call:hover {
+            color: var(--white);
+            border-color: var(--accent-gold-hover);
+            transform: translateY(-2px);
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .about-metrics {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .metric-card {
+            background-color: var(--charcoal-muted);
+            padding: 2.5rem 2rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .metric-card svg {
+            width: 26px;
+            height: 26px;
+            stroke: var(--accent-gold);
+        }
+
+        .metric-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            color: var(--white);
+            margin-bottom: 0;
+        }
+
+        /* Service Areas / Map Section */
+        .areas-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .area-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .area-badge {
+            font-size: 0.82rem;
+            color: var(--text-light);
+            background-color: var(--charcoal-muted);
+            border: 1px solid var(--border-color);
+            padding: 0.6rem 1.1rem;
+            border-radius: 999px;
+        }
+
+        .map-frame-wrap {
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            aspect-ratio: 4 / 3;
+        }
+
+        .map-frame-wrap iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: grayscale(0.15) contrast(1.05);
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background-color: var(--charcoal-muted);
+            border: 1px solid var(--border-color);
+            padding: 3rem 2.5rem;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .service-icon {
+            width: 32px;
+            height: 32px;
+            stroke: var(--accent-gold);
+            margin-bottom: 2rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            font-size: 0.9rem;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2.5rem;
+        }
+
+        .project-card {
+            position: relative;
+            border-radius: 4px;
+            overflow: hidden;
+            aspect-ratio: 16 / 10;
+            background-color: var(--charcoal-muted);
+            cursor: pointer;
+        }
+
+        .project-card:focus-visible {
+            outline: 2px solid var(--accent-gold);
+            outline-offset: 3px;
+        }
+
+        /* Keyboard focus-visible states for remaining interactive elements,
+           reusing the same treatment established above for .project-card. */
+        .brand-logo:focus-visible,
+        .nav-link:focus-visible,
+        .nav-toggle:focus-visible,
+        .btn:focus-visible,
+        .btn-call:focus-visible,
+        .project-modal-close:focus-visible,
+        .project-modal-nav:focus-visible,
+        .project-modal-thumbs button:focus-visible,
+        .footer-col a:focus-visible {
+            outline: 2px solid var(--accent-gold);
+            outline-offset: 3px;
+        }
+
+        .project-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 45%, rgba(18,22,26,0.92) 100%);
+            pointer-events: none;
+        }
+
+        .project-img-placeholder,
+        .project-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.85;
+            transition: var(--transition);
+        }
+
+        .project-card:hover .project-img-placeholder,
+        .project-card:hover .project-img {
+            transform: scale(1.03);
+            opacity: 1;
+        }
+
+        .project-meta {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 2.5rem;
+            z-index: 2;
+        }
+
+        .project-category {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: var(--white);
+        }
+
+        /* Project Gallery Modal — additive overlay only; the projects grid
+           above is untouched. Supports a cover photo plus any combination of
+           gallery photos and a before/after pair as that content is added. */
+        .project-modal {
+            position: fixed;
+            inset: 0;
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .project-modal[hidden] {
+            display: none;
+        }
+
+        .project-modal-backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(10, 14, 18, 0.88);
+            backdrop-filter: blur(4px);
+        }
+
+        .project-modal-panel {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 960px;
+            max-height: 88vh;
+            overflow-y: auto;
+            background-color: var(--charcoal-muted);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+        }
+
+        .project-modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            z-index: 2;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(18, 22, 26, 0.7);
+            color: var(--white);
+            font-size: 1.5rem;
+            line-height: 1;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .project-modal-close:hover {
+            background-color: var(--accent-gold);
+        }
+
+        .project-modal-media {
+            position: relative;
+            background-color: var(--charcoal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 320px;
+        }
+
+        .project-modal-image {
+            width: 100%;
+            height: 100%;
+            max-height: 88vh;
+            object-fit: contain;
+        }
+
+        .project-modal-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(18, 22, 26, 0.6);
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .project-modal-nav:hover {
+            background-color: var(--accent-gold);
+            border-color: var(--accent-gold);
+        }
+
+        .project-modal-prev {
+            left: 1rem;
+        }
+
+        .project-modal-next {
+            right: 1rem;
+        }
+
+        .project-modal-badge {
+            position: absolute;
+            bottom: 1rem;
+            left: 1rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            color: var(--charcoal);
+            background-color: var(--accent-gold);
+            padding: 0.35rem 0.75rem;
+            border-radius: 999px;
+        }
+
+        .project-modal-badge:empty {
+            display: none;
+        }
+
+        .project-modal-info {
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-modal-category {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .project-modal-title {
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .project-modal-facts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .project-modal-facts:empty {
+            display: none;
+            margin-bottom: 0;
+        }
+
+        .project-modal-facts span {
+            font-size: 0.78rem;
+            color: var(--text-light);
+            background-color: var(--charcoal);
+            border: 1px solid var(--border-color);
+            padding: 0.4rem 0.85rem;
+            border-radius: 999px;
+        }
+
+        .project-modal-desc {
+            font-size: 0.92rem;
+            font-weight: 300;
+            color: #94A3B8;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-modal-desc:empty {
+            display: none;
+        }
+
+        .project-modal-thumbs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: auto;
+        }
+
+        .project-modal-thumbs:empty {
+            display: none;
+        }
+
+        .project-modal-thumbs button {
+            width: 56px;
+            height: 56px;
+            border-radius: 4px;
+            overflow: hidden;
+            padding: 0;
+            border: 2px solid transparent;
+            cursor: pointer;
+            background: none;
+        }
+
+        .project-modal-thumbs button.is-active {
+            border-color: var(--accent-gold);
+        }
+
+        .project-modal-thumbs img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 760px) {
+            .project-modal {
+                padding: 0;
+            }
+
+            .project-modal-panel {
+                grid-template-columns: 1fr;
+                max-height: 100vh;
+                height: 100%;
+                border-radius: 0;
+            }
+
+            .project-modal-media {
+                min-height: 260px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .project-modal-backdrop {
+                backdrop-filter: none;
+            }
+        }
+
+        /* Reviews Section */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .review-card {
+            background-color: var(--charcoal-muted);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review-stars {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 1.5rem;
+        }
+
+        .review-stars svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--accent-gold);
+        }
+
+        .review-quote {
+            font-size: 0.95rem;
+            color: #CBD5E1;
+            font-weight: 300;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .review-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--deep-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--accent-gold);
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .review-name {
+            font-size: 0.9rem;
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        .review-location {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        /* Process Section */
+        .process-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .process-step {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 2rem;
+            padding: 2.5rem 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .process-step:last-child {
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .process-number {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        .process-body h3 {
+            font-size: 1.25rem;
+            color: var(--white);
+            margin-bottom: 0.75rem;
+        }
+
+        .process-body p {
+            max-width: 560px;
+        }
+
+        /* CTA / Contact Section */
+        .contact-section {
+            border-bottom: none;
+            background-color: var(--deep-blue);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .contact-detail svg {
+            width: 20px;
+            height: 20px;
+            stroke: var(--accent-gold);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .contact-detail-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-detail-value {
+            color: var(--white);
+            font-size: 1rem;
+        }
+
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 2.5rem;
+            backdrop-filter: blur(8px);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+            padding: 0.85rem 1rem;
+            color: var(--white);
+            font-family: var(--font-sans);
+            font-size: 0.9rem;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #64748B;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
+
+        .contact-form .btn-primary {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--charcoal);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 3rem;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .footer-brand p {
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            max-width: 280px;
+        }
+
+        .footer-col h4 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--white);
+            margin-bottom: 1.25rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-col a {
+            font-size: 0.85rem;
+            color: #94A3B8;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom p {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        .footer-license {
+            font-size: 0.78rem;
+            color: var(--text-muted);
+        }
+
+        /* Mobile nav toggle */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .nav-toggle span {
+            width: 22px;
+            height: 2px;
+            background-color: var(--white);
+            transition: var(--transition);
+        }
+
+        /* Scroll-reveal utility (fade in + slide up), applied via JS/IntersectionObserver */
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .hero h1 {
+                font-size: clamp(2.1rem, 7vw, 2.75rem);
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero p {
+                max-width: 480px;
+                font-size: 1.02rem;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .services-grid,
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .nav-links,
+            .nav-actions .btn-secondary,
+            .nav-actions .btn-primary {
+                display: none;
+            }
+
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-links.mobile-open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 90px;
+                left: 0;
+                width: 100%;
+                background-color: rgba(18, 22, 26, 0.98);
+                padding: 1.5rem 2rem;
+                gap: 1.25rem;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            section {
+                padding: 5rem 0;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .hero {
+                min-height: 100svh;
+            }
+
+            .hero-logo-badge {
+                width: 82px;
+                margin-bottom: 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: clamp(1.85rem, 9vw, 2.25rem);
+                margin-bottom: 1.25rem;
+            }
+
+            .hero p {
+                font-size: 0.95rem;
+                margin-bottom: 2rem;
+                max-width: 100%;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+                width: 100%;
+            }
+
+            .hero-actions .btn,
+            .hero-actions .btn-call {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                transition: none !important;
+                animation: none !important;
+                scroll-behavior: auto !important;
+            }
+
+            .hero-content,
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+        }
+    </style>
+    <noscript>
+        <style>
+            .hero-content, .reveal { opacity: 1 !important; transform: none !important; }
+            .hero-fallback-img { opacity: 0.55 !important; }
+        </style>
+    </noscript>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="container nav-container">
+            <a href="#top" class="brand-logo">
+                <img class="logo-mark" src="assets/logo/logo-white.png" alt="SR Roofing logo">
+                <span class="brand-text">
+                    <span class="brand-name">Sambrano Roofing</span>
+                    <span class="brand-sub">&amp; Exterior LLC</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#areas" class="nav-link">Service Areas</a></li>
+                <li><a href="#process" class="nav-link">Process</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:15205541292" class="btn btn-secondary">(520) 554-1292</a>
+                <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+                <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('mobile-open')">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Trust bar: compact ROC/license strip between the fixed nav and the
+         hero. margin-top clears the 90px fixed nav height. Reuses existing
+         color tokens/container width only — no new CSS added, hero untouched. -->
+    <div style="margin-top: 90px; background-color: var(--charcoal-muted); border-bottom: 1px solid var(--border-color); padding: 0.65rem 0;">
+        <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.35rem 1.5rem;">
+            <p style="margin: 0; font-size: 0.78rem; letter-spacing: 0.05em; color: var(--white); font-weight: 500;">LICENSED &bull; BONDED &bull; INSURED &bull; ROC #367370</p>
+            <p style="margin: 0; font-size: 0.78rem; color: var(--text-muted);">Sambrano Roofing &amp; Exterior LLC | CR-42 Roofing</p>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero" id="top">
+        <div class="hero-video-container">
+            <video
+                id="hero-video"
+                class="hero-bg-video"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="auto"
+                poster="assets/video/poster.jpg"
+                aria-hidden="true">
+                <source src="assets/video/hero.mp4" type="video/mp4">
+                <source src="assets/video/hero.webm" type="video/webm">
+            </video>
+            <img
+                id="hero-fallback"
+                class="hero-fallback-img"
+                src="assets/video/poster.jpg"
+                alt=""
+                aria-hidden="true"
+                fetchpriority="high">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" id="hero-content">
+                <img class="hero-logo-badge logo-mark" src="assets/logo/logo-white.png" alt="SR Roofing logo">
+                <h1>Protecting Tucson Homes with Expert Roofing Solutions</h1>
+                <p>Tucson-owned and operated by Jose Erick Sambrano Torres. From tile lift &amp; reset to roof coatings and full shingle roof systems, we protect Tucson-area homes and businesses through monsoon season and everything after.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+                    <a href="#projects" class="btn btn-secondary">View Our Projects</a>
+                    <a href="tel:15205541292" class="btn-call">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Call Now
+                    </a>
+                    <a href="mailto:info@sambranoroofing.com" class="btn-call">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                        Email Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container about-grid">
+            <div class="about-copy">
+                <span class="section-badge">About Us</span>
+                <h2 class="section-title">Licensed, local, and built for desert roofs.</h2>
+                <p>Sambrano Roofing &amp; Exterior LLC is owned and operated by Jose Erick Sambrano Torres, working on tile, shingle, and flat roofs across Tucson and Southern Arizona. We know how the desert heat, UV exposure, and monsoon storms wear down a roof &mdash; and we build our repairs and installs around that reality.</p>
+                <p style="margin-top: 1.25rem;">Every job is backed by licensed, bonded, and insured work, with free estimates on every project.</p>
+                <!-- Verified official Arizona Registrar of Contractors search URL,
+                     provided by Erick. -->
+                <p style="margin-top: 1.25rem;">
+                    <strong>Sambrano Roofing &amp; Exterior LLC</strong><br>
+                    Licensed Arizona Roofing Contractor<br>
+                    ROC #367370 | CR-42 Roofing<br>
+                    <a href="https://roc.az.gov/contractor-search" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: underline;">Verify Our ROC License</a>
+                </p>
+            </div>
+            <div class="about-metrics">
+                <div class="metric-card reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4M12 3l8 4v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V7l8-4z"/></svg>
+                    <div class="metric-title">Licensed</div>
+                </div>
+                <div class="metric-card reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.5v6c0 5-3.5 9-9 9.5-5.5-.5-9-4.5-9-9.5v-6L12 2z"/></svg>
+                    <div class="metric-title">Bonded &amp; Insured</div>
+                </div>
+                <div class="metric-card reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 12h8M12 8v8"/></svg>
+                    <div class="metric-title">Free Estimates</div>
+                </div>
+                <div class="metric-card reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <div class="metric-title">Tucson &amp; Southern AZ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Services</span>
+                <h2 class="section-title">Roofing &amp; exterior systems built for the desert</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l9 4 9-4M3 6v12l9 4 9-4V6M3 6l9-4 9 4"/></svg>
+                    <h3>Roof Coatings</h3>
+                    <p>Elastomeric coating systems for flat and low-slope roofs, reflecting heat and sealing against monsoon rain.</p>
+                </div>
+                <div class="service-card reveal">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                    <h3>Shingle Roofing</h3>
+                    <p>Full shingle roof installations and replacements, built for Tucson's sun and storms.</p>
+                </div>
+                <div class="service-card reveal">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h4v-6h4v6h4a1 1 0 001-1V10"/></svg>
+                    <h3>Tile Lift &amp; Reset</h3>
+                    <p>We lift existing tile, replace the underlayment, and reset the original tile so your roofline keeps its look with a fresh waterproof base.</p>
+                </div>
+                <div class="service-card reveal">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 7h7.5l-6 4.5 2.5 7-6-4.5-6 4.5 2.5-7-6-4.5h7.5z"/></svg>
+                    <h3>Roof Repairs</h3>
+                    <p>Leak detection and targeted fixes for tile, shingle, and flat roofs.</p>
+                </div>
+                <div class="service-card reveal">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="1"/><path d="M4 10l8-6 8 6"/></svg>
+                    <h3>Parapet Repair</h3>
+                    <p>Repair and resealing of parapet walls on flat and commercial roof systems.</p>
+                </div>
+                <div class="service-card reveal">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10l8-6 8 6v10M9 20v-6h6v6"/></svg>
+                    <h3>Fascia &amp; Wood Replacement</h3>
+                    <p>Replacing rotted or damaged fascia and trim to keep water out and your roofline looking sharp.</p>
+                </div>
+                <div class="service-card reveal">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+                    <h3>Plywood Replacement</h3>
+                    <p>Replacing damaged roof decking so your new roofing system has a solid, dry base to sit on.</p>
+                </div>
+                <div class="service-card reveal">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-5 7-11a7 7 0 00-14 0c0 6 7 11 7 11z"/><circle cx="12" cy="11" r="2"/></svg>
+                    <h3>Leak Repairs</h3>
+                    <p>Finding and fixing the source of a leak &mdash; not just patching where the water shows up inside.</p>
+                </div>
+                <div class="service-card reveal">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 12a9.5 9.5 0 11-2.8-6.7M21.5 4v5h-5"/></svg>
+                    <h3>Yearly Roof Maintenance</h3>
+                    <p>Seasonal check-ups to catch small issues before Tucson's monsoon season turns them into big ones.</p>
+                </div>
+                <div class="service-card reveal">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M4 20L20 4" opacity="0"/><path d="M6 4h12l-1 12a3 3 0 01-3 3H10a3 3 0 01-3-3L6 4z"/></svg>
+                    <h3>Gutter Cleaning</h3>
+                    <p>Clearing gutters and downspouts so rainwater moves away from your roof and foundation like it should.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Recent Work</span>
+                <h2 class="section-title">Projects around Tucson</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card reveal" data-project="1" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project gallery: Damaged Decking Before Repair">
+                    <img class="project-img" src="assets/images/projects/project-1.jpg" width="619" height="1100" loading="lazy" decoding="async" alt="Roof deck damage before repair">
+                    <div class="project-meta">
+                        <div class="project-category">Roof Repair</div>
+                        <div class="project-title">Damaged Decking Before Repair</div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-project="2" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project gallery: Rotted Plywood Decking">
+                    <img class="project-img" src="assets/images/projects/project-2.jpg" width="1100" height="619" loading="lazy" decoding="async" alt="Roof deck damage before repair, wide view">
+                    <div class="project-meta">
+                        <div class="project-category">Roof Repair</div>
+                        <div class="project-title">Rotted Plywood Decking</div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-project="3" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project gallery: Flat Roof Coating Application">
+                    <img class="project-img" src="assets/images/projects/project-3.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Fresh elastomeric roof coating application">
+                    <div class="project-meta">
+                        <div class="project-category">Roof Coating</div>
+                        <div class="project-title">Flat Roof Coating Application</div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-project="4" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project gallery: Completed Flat Roof Coating">
+                    <img class="project-img" src="assets/images/projects/project-4.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Completed flat roof coating with mountain view">
+                    <div class="project-meta">
+                        <div class="project-category">Roof Coating</div>
+                        <div class="project-title">Completed Flat Roof Coating</div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-project="5" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project gallery: Coating Around Roof Penetrations">
+                    <img class="project-img" src="assets/images/projects/project-5.jpg" width="825" height="1100" loading="lazy" decoding="async" alt="Roof coating around HVAC unit and vents">
+                    <div class="project-meta">
+                        <div class="project-category">Roof Coating</div>
+                        <div class="project-title">Coating Around Roof Penetrations</div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-project="6" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project gallery: Shingle Roof + Flat Roof Coating">
+                    <img class="project-img" src="assets/images/projects/project-6.jpg" width="1100" height="825" loading="lazy" decoding="async" alt="Shingle roof ridge line with new coating on adjacent flat roof">
+                    <div class="project-meta">
+                        <div class="project-category">Shingle &amp; Coating</div>
+                        <div class="project-title">Shingle Roof + Flat Roof Coating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery Modal: prepared to support a cover photo, additional
+         gallery photos, before/after pairs, city, service performed, and a
+         short description per project. Populate the PROJECTS data object in
+         the script below as more photos and details become available. -->
+    <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title" hidden>
+        <div class="project-modal-backdrop" data-modal-close></div>
+        <div class="project-modal-panel">
+            <button class="project-modal-close" type="button" data-modal-close aria-label="Close project gallery">&times;</button>
+            <div class="project-modal-media">
+                <button class="project-modal-nav project-modal-prev" type="button" aria-label="Previous photo">&#8249;</button>
+                <img class="project-modal-image" id="project-modal-image" src="" alt="">
+                <button class="project-modal-nav project-modal-next" type="button" aria-label="Next photo">&#8250;</button>
+                <div class="project-modal-badge" id="project-modal-imgLabel"></div>
+            </div>
+            <div class="project-modal-info">
+                <div class="project-modal-category" id="project-modal-category"></div>
+                <h3 class="project-modal-title" id="project-modal-title"></h3>
+                <div class="project-modal-facts" id="project-modal-facts"></div>
+                <p class="project-modal-desc" id="project-modal-desc"></p>
+                <div class="project-modal-thumbs" id="project-modal-thumbs"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Areas -->
+    <section id="areas">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Service Areas</span>
+                <h2 class="section-title">Proudly serving Tucson &amp; Southern Arizona</h2>
+            </div>
+            <div class="areas-grid">
+                <div class="areas-copy">
+                    <p>We work on roofs throughout Tucson and the surrounding region. If you're not sure whether your area is covered, give us a call &mdash; we're happy to check.</p>
+                    <div class="area-badges">
+                        <span class="area-badge">Tucson</span>
+                        <span class="area-badge">Marana</span>
+                        <span class="area-badge">Oro Valley</span>
+                        <span class="area-badge">Sahuarita</span>
+                        <span class="area-badge">Green Valley</span>
+                        <span class="area-badge">Vail</span>
+                        <span class="area-badge">Mount Lemmon</span>
+                        <span class="area-badge">Globe</span>
+                        <span class="area-badge">Casa Grande</span>
+                    </div>
+                </div>
+                <div class="map-frame-wrap">
+                    <iframe src="https://www.google.com/maps?q=Tucson,AZ&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sambrano Roofing service area map"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">How It Works</span>
+                <h2 class="section-title">From estimate to final walkthrough</h2>
+            </div>
+            <div class="process-list">
+                <div class="process-step reveal">
+                    <div class="process-number">01</div>
+                    <div class="process-body">
+                        <h3>Free on-site estimate</h3>
+                        <p>We inspect your roof in person, document its condition, and give you a written estimate &mdash; no pressure, no obligation.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-number">02</div>
+                    <div class="process-body">
+                        <h3>Materials &amp; scheduling</h3>
+                        <p>Once you approve the scope, we order materials and lock in a start date that works around Tucson's weather windows.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-number">03</div>
+                    <div class="process-body">
+                        <h3>Installation</h3>
+                        <p>Licensed crews complete the work with daily site cleanup, so your property stays livable throughout the project.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal">
+                    <div class="process-number">04</div>
+                    <div class="process-body">
+                        <h3>Final walkthrough &amp; warranty</h3>
+                        <p>We walk the finished roof with you, answer questions, and hand over your written workmanship warranty.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <span class="section-badge">Get In Touch</span>
+                <h2>Request your free estimate</h2>
+                <p>Tell us about your roof and we'll get back to you within one business day.</p>
+
+                <div class="contact-detail">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    <div>
+                        <div class="contact-detail-title">Phone</div>
+                        <div class="contact-detail-value"><a href="tel:15205541292">(520) 554-1292</a></div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                    <div>
+                        <div class="contact-detail-title">Email</div>
+                        <div class="contact-detail-value"><a href="mailto:info@sambranoroofing.com">info@sambranoroofing.com</a></div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <div>
+                        <div class="contact-detail-title">Service Area</div>
+                        <div class="contact-detail-value">Tucson &amp; all of Southern Arizona</div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4M12 3l8 4v5c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V7l8-4z"/></svg>
+                    <div>
+                        <div class="contact-detail-title">Owner / Operator</div>
+                        <div class="contact-detail-value">Jose Erick Sambrano Torres</div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Jane" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Doe" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(520) 555-0100" required>
+                </div>
+                <div class="form-group">
+                    <label for="service">Service Needed</label>
+                    <select id="service" name="service">
+                        <option>Roof Coatings</option>
+                        <option>Shingle Roofing</option>
+                        <option>Tile Lift &amp; Reset</option>
+                        <option>Roof Repairs</option>
+                        <option>Parapet Repair</option>
+                        <option>Fascia &amp; Wood Replacement</option>
+                        <option>Plywood Replacement</option>
+                        <option>Leak Repairs</option>
+                        <option>Yearly Roof Maintenance</option>
+                        <option>Gutter Cleaning</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Details</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your roof or the issue you're seeing"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Request Free Estimate</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand-name">Sambrano Roofing &amp; Exterior LLC</span>
+                    <p>Licensed, bonded, and insured roofing contractor serving Tucson and Southern Arizona. Owned and operated by Jose Erick Sambrano Torres.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Roof Coatings</a></li>
+                        <li><a href="#services">Shingle Roofing</a></li>
+                        <li><a href="#services">Tile Lift &amp; Reset</a></li>
+                        <li><a href="#services">Repairs &amp; Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#areas">Service Areas</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:15205541292">(520) 554-1292</a></li>
+                        <li><a href="mailto:info@sambranoroofing.com">info@sambranoroofing.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Arizona Contractor Information: ROC consumer-rights/compliance
+                 section, kept deliberately small and separate from the main
+                 sales content per Erick's request. -->
+            <div style="padding-top: 2rem; margin-top: 1rem; border-top: 1px solid var(--border-color);">
+                <h4 style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--white); margin-bottom: 0.85rem;">Arizona Contractor Information</h4>
+                <p style="font-size: 0.85rem; color: #94A3B8; max-width: 640px;">Sambrano Roofing &amp; Exterior LLC &mdash; ROC #367370 | CR-42 Roofing</p>
+                <p style="font-size: 0.85rem; color: #94A3B8; max-width: 640px; margin-top: 0.6rem;">NOTICE: The property owner has the right to file a written complaint with the Arizona Registrar of Contractors for an alleged violation of A.R.S. &sect; 32-1154(A).</p>
+                <p style="font-size: 0.85rem; color: #94A3B8; max-width: 640px; margin-top: 0.6rem;">Customers have the right to file a written complaint with the Arizona Registrar of Contractors regarding an alleged violation of Arizona law.</p>
+                <p style="font-size: 0.85rem; margin-top: 0.75rem;">
+                    <a href="https://roc.az.gov/contractor-search" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: underline;">Verify Our ROC License</a>
+                    &nbsp;&middot;&nbsp;
+                    <a href="https://roc.az.gov/complaint-process-legal" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: underline;">ROC Complaint Information</a>
+                </p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sambrano Roofing &amp; Exterior LLC. All rights reserved.</p>
+                <p class="footer-license">Licensed, Bonded &amp; Insured &middot; ROC #367370</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile nav toggle support
+        document.addEventListener('click', function (e) {
+            const nav = document.querySelector('.nav-links');
+            const toggle = document.querySelector('.nav-toggle');
+            if (nav && nav.classList.contains('mobile-open') && !nav.contains(e.target) && !toggle.contains(e.target)) {
+                nav.classList.remove('mobile-open');
+            }
+        });
+
+        (function () {
+            var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            var video = document.getElementById('hero-video');
+            var fallback = document.getElementById('hero-fallback');
+            var heroContent = document.getElementById('hero-content');
+
+            // Hero fade-in: reveal the content once assets are ready (or immediately
+            // if the person prefers reduced motion).
+            function revealHero() {
+                if (heroContent) heroContent.classList.add('is-visible');
+            }
+
+            if (reduceMotion) {
+                // Respect reduced motion: skip the animated fade/slide, show the
+                // static poster instead of an autoplaying video, and pause playback.
+                if (video) {
+                    video.removeAttribute('autoplay');
+                    video.pause();
+                }
+                if (fallback) fallback.classList.add('is-active');
+                revealHero();
+            } else if (video) {
+                // Background video: fade it in once it can actually play, and fall
+                // back to the high-quality poster image automatically if the video
+                // errors out or the browser can't play either source.
+                var videoReady = false;
+
+                video.addEventListener('loadeddata', function () {
+                    videoReady = true;
+                    video.classList.add('is-ready');
+                    revealHero();
+                });
+
+                video.addEventListener('error', function () {
+                    if (!videoReady && fallback) {
+                        fallback.classList.add('is-active');
+                        revealHero();
+                    }
+                });
+
+                // Safety net: if neither event fires quickly (slow connection,
+                // autoplay blocked, codec unsupported), show the fallback image
+                // so the hero never sits empty.
+                setTimeout(function () {
+                    if (!videoReady) {
+                        if (video.readyState >= 2) {
+                            video.classList.add('is-ready');
+                        } else if (fallback) {
+                            fallback.classList.add('is-active');
+                        }
+                        revealHero();
+                    }
+                }, 2500);
+
+                video.play().catch(function () {
+                    // A rejected play() on the very first attempt can be a brief
+                    // timing/autoplay-eligibility hiccup rather than a genuine
+                    // failure — give it one more short-delay try before falling
+                    // back to the static poster. Bounded to a single retry (no
+                    // polling, no loop), and skipped if the video has already
+                    // become ready by the time the retry fires.
+                    setTimeout(function () {
+                        if (videoReady) return;
+                        video.play().catch(function () {
+                            if (!videoReady && fallback) {
+                                fallback.classList.add('is-active');
+                                revealHero();
+                            }
+                        });
+                    }, 300);
+                });
+            } else if (fallback) {
+                fallback.classList.add('is-active');
+                revealHero();
+            }
+
+            // Scroll-reveal: fade + slide up section headers and cards as they
+            // enter the viewport. Skipped entirely under reduced motion (CSS
+            // already forces .reveal elements visible in that case).
+            if (!reduceMotion && 'IntersectionObserver' in window) {
+                var revealItems = document.querySelectorAll('.reveal');
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+                revealItems.forEach(function (el) { observer.observe(el); });
+            } else {
+                document.querySelectorAll('.reveal').forEach(function (el) {
+                    el.classList.add('is-visible');
+                });
+            }
+        })();
+
+        (function () {
+            // Project portfolio data. Each entry is prepared to hold a cover
+            // photo, additional gallery photos, a before/after pair, city,
+            // service performed, and a short description. Fields that aren't
+            // confirmed yet (city, before/after, extra gallery shots) are left
+            // empty rather than filled with placeholder facts — add real
+            // photos/details here as the portfolio grows and they'll appear
+            // automatically.
+            var PROJECTS = {
+                '1': {
+                    category: 'Roof Repair',
+                    title: 'Damaged Decking Before Repair',
+                    city: '',
+                    description: 'Roof decking inspected and prepped ahead of repair.',
+                    cover: 'assets/images/projects/project-1.jpg',
+                    gallery: [],
+                    before: '',
+                    after: ''
+                },
+                '2': {
+                    category: 'Roof Repair',
+                    title: 'Rotted Plywood Decking',
+                    city: '',
+                    description: 'Rotted plywood decking exposed and prepared for replacement.',
+                    cover: 'assets/images/projects/project-2.jpg',
+                    gallery: [],
+                    before: '',
+                    after: ''
+                },
+                '3': {
+                    category: 'Roof Coating',
+                    title: 'Flat Roof Coating Application',
+                    city: '',
+                    description: 'Elastomeric roof coating applied to a flat roof section.',
+                    cover: 'assets/images/projects/project-3.jpg',
+                    gallery: [],
+                    before: '',
+                    after: ''
+                },
+                '4': {
+                    category: 'Roof Coating',
+                    title: 'Completed Flat Roof Coating',
+                    city: '',
+                    description: 'Finished flat roof coating providing a sealed, reflective surface.',
+                    cover: 'assets/images/projects/project-4.jpg',
+                    gallery: [],
+                    before: '',
+                    after: ''
+                },
+                '5': {
+                    category: 'Roof Coating',
+                    title: 'Coating Around Roof Penetrations',
+                    city: '',
+                    description: 'Coating detailed carefully around HVAC equipment and roof penetrations.',
+                    cover: 'assets/images/projects/project-5.jpg',
+                    gallery: [],
+                    before: '',
+                    after: ''
+                },
+                '6': {
+                    category: 'Shingle & Coating',
+                    title: 'Shingle Roof + Flat Roof Coating',
+                    city: '',
+                    description: 'Shingle roofline alongside a freshly coated adjacent flat roof section.',
+                    cover: 'assets/images/projects/project-6.jpg',
+                    gallery: [],
+                    before: '',
+                    after: ''
+                }
+            };
+
+            var modal = document.getElementById('project-modal');
+            if (!modal) return;
+
+            var imageEl = document.getElementById('project-modal-image');
+            var labelEl = document.getElementById('project-modal-imgLabel');
+            var categoryEl = document.getElementById('project-modal-category');
+            var titleEl = document.getElementById('project-modal-title');
+            var factsEl = document.getElementById('project-modal-facts');
+            var descEl = document.getElementById('project-modal-desc');
+            var thumbsEl = document.getElementById('project-modal-thumbs');
+            var prevBtn = modal.querySelector('.project-modal-prev');
+            var nextBtn = modal.querySelector('.project-modal-next');
+            var closeEls = modal.querySelectorAll('[data-modal-close]');
+
+            var currentImages = [];
+            var currentIndex = 0;
+            var lastTrigger = null;
+
+            function buildImages(project) {
+                var images = [{ src: project.cover, label: '' }];
+                (project.gallery || []).forEach(function (src) {
+                    images.push({ src: src, label: '' });
+                });
+                if (project.before) images.push({ src: project.before, label: 'Before' });
+                if (project.after) images.push({ src: project.after, label: 'After' });
+                return images;
+            }
+
+            function renderImage() {
+                var img = currentImages[currentIndex];
+                imageEl.src = img.src;
+                imageEl.alt = titleEl.textContent;
+                labelEl.textContent = currentImages.length > 1 ? img.label : '';
+
+                var showNav = currentImages.length > 1;
+                prevBtn.style.display = showNav ? 'flex' : 'none';
+                nextBtn.style.display = showNav ? 'flex' : 'none';
+
+                thumbsEl.querySelectorAll('button').forEach(function (btn, i) {
+                    btn.classList.toggle('is-active', i === currentIndex);
+                });
+            }
+
+            function openModal(id, trigger) {
+                var project = PROJECTS[id];
+                if (!project) return;
+
+                lastTrigger = trigger || null;
+                currentImages = buildImages(project);
+                currentIndex = 0;
+
+                categoryEl.textContent = project.category || '';
+                titleEl.textContent = project.title || '';
+                descEl.textContent = project.description || '';
+
+                factsEl.innerHTML = '';
+                if (project.city) {
+                    var citySpan = document.createElement('span');
+                    citySpan.textContent = project.city;
+                    factsEl.appendChild(citySpan);
+                }
+
+                thumbsEl.innerHTML = '';
+                if (currentImages.length > 1) {
+                    currentImages.forEach(function (img, i) {
+                        var btn = document.createElement('button');
+                        btn.type = 'button';
+                        btn.setAttribute('aria-label', 'Show photo ' + (i + 1));
+                        var thumbImg = document.createElement('img');
+                        thumbImg.src = img.src;
+                        thumbImg.alt = '';
+                        btn.appendChild(thumbImg);
+                        btn.addEventListener('click', function () {
+                            currentIndex = i;
+                            renderImage();
+                        });
+                        thumbsEl.appendChild(btn);
+                    });
+                }
+
+                renderImage();
+
+                modal.hidden = false;
+                document.body.style.overflow = 'hidden';
+                modal.querySelector('.project-modal-close').focus();
+            }
+
+            function closeModal() {
+                modal.hidden = true;
+                document.body.style.overflow = '';
+                if (lastTrigger) lastTrigger.focus();
+            }
+
+            function showNext(delta) {
+                if (currentImages.length < 2) return;
+                currentIndex = (currentIndex + delta + currentImages.length) % currentImages.length;
+                renderImage();
+            }
+
+            document.querySelectorAll('.project-card[data-project]').forEach(function (card) {
+                card.addEventListener('click', function () {
+                    openModal(card.getAttribute('data-project'), card);
+                });
+                card.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        openModal(card.getAttribute('data-project'), card);
+                    }
+                });
+            });
+
+            closeEls.forEach(function (el) {
+                el.addEventListener('click', closeModal);
+            });
+
+            prevBtn.addEventListener('click', function () { showNext(-1); });
+            nextBtn.addEventListener('click', function () { showNext(1); });
+
+            document.addEventListener('keydown', function (e) {
+                if (modal.hidden) return;
+                if (e.key === 'Escape') closeModal();
+                if (e.key === 'ArrowLeft') showNext(-1);
+                if (e.key === 'ArrowRight') showNext(1);
+            });
+        })();
+    </script>
+</body>
+</html>
