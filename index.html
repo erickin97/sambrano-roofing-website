@@ -1659,7 +1659,7 @@
                     <input type="text" id="bot-field" name="bot-field" tabindex="-1" autocomplete="off" aria-hidden="true">
                 </p>
 
-                <p class="form-required-note">Fields marked <span class="required-marker" aria-hidden="true">*</span> are required.</p>
+                <p class="form-required-note">Fields marked <span class="required-marker" aria-hidden="true">*</span> are required &mdash; everything else is optional, but the more you share, the better we can help.</p>
 
                 <div class="form-row">
                     <div class="form-group">
@@ -1667,8 +1667,8 @@
                         <input type="text" id="fname" name="fname" placeholder="Jane" autocomplete="given-name" required>
                     </div>
                     <div class="form-group">
-                        <label for="lname">Last Name <span class="required-marker" aria-hidden="true">*</span></label>
-                        <input type="text" id="lname" name="lname" placeholder="Doe" autocomplete="family-name" required>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Doe" autocomplete="family-name">
                     </div>
                 </div>
                 <div class="form-row">
@@ -1677,18 +1677,18 @@
                         <input type="tel" id="phone" name="phone" placeholder="(520) 555-0100" inputmode="tel" autocomplete="tel" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email Address <span class="required-marker" aria-hidden="true">*</span></label>
-                        <input type="email" id="email" name="email" placeholder="jane@example.com" inputmode="email" autocomplete="email" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="jane@example.com" inputmode="email" autocomplete="email">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="address">Property Address <span class="required-marker" aria-hidden="true">*</span></label>
-                    <input type="text" id="address" name="address" placeholder="Street address, Tucson, AZ" autocomplete="street-address" required>
+                    <label for="address">Property Address</label>
+                    <input type="text" id="address" name="address" placeholder="Street address, Tucson, AZ" autocomplete="street-address">
                 </div>
                 <div class="form-group">
-                    <label for="service">Roofing Services Needed <span class="required-marker" aria-hidden="true">*</span></label>
-                    <select id="service" name="service" required>
-                        <option value="" disabled selected>Select a service</option>
+                    <label for="service">Roofing Services Needed</label>
+                    <select id="service" name="service">
+                        <option value="" selected>Select a service</option>
                         <option>Roof Coatings</option>
                         <option>Tile Roofing</option>
                         <option>Tile Lift &amp; Reset</option>
