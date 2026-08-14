@@ -223,7 +223,7 @@
 
                 <h2 id="info-we-collect">2. Information We Collect</h2>
                 <h3>Information you provide through our estimate form</h3>
-                <p>When you submit our website's estimate request form, we ask for information such as your first and last name, phone number, the type of roofing service you're interested in, and any additional details you choose to share about your project. Our estimate form is periodically updated, and the specific fields requested may change over time.</p>
+                <p>When you submit our website's estimate request form, we ask for your first and last name, phone number, email address, property address, the roofing service you're interested in, and (optionally) any additional details about your project. Our estimate form is periodically updated, and the specific fields requested may change over time. <strong>Submissions are processed through Netlify Forms</strong> (a feature of our website hosting provider, Netlify) &mdash; see <a href="#how-we-share">Section 9</a> and <a href="#spam-protection">Section 8</a> for how that works.</p>
                 <h3>Information you provide by phone or email</h3>
                 <p>If you contact us directly by phone or email instead of (or in addition to) using the website form, we receive whatever information you choose to share with us during that conversation or in your message &mdash; which may include your name, contact details, property or project information, and photos you send us.</p>
                 <h3>Project and job information</h3>
@@ -234,8 +234,8 @@
                 <ul>
                     <li><strong>No analytics software</strong> (such as Google Analytics) is installed on our website.</li>
                     <li><strong>No advertising pixels</strong> (such as a Meta/Facebook Pixel, TikTok Pixel, or Google Ads conversion tag) are installed on our website.</li>
-                    <li><strong>No CAPTCHA or anti-spam service</strong> is currently installed on our website.</li>
-                    <li><strong>We do not intentionally set cookies</strong>, and our website code does not use browser local storage or session storage.</li>
+                    <li><strong>We do not use Google reCAPTCHA, hCaptcha, Cloudflare Turnstile, or any similar CAPTCHA service.</strong> Our estimate form uses a hidden "honeypot" field &mdash; invisible to real visitors, and skipped by keyboard/screen-reader navigation &mdash; that only automated bots tend to fill in. Netlify Forms uses this, together with its own built-in spam filtering, to discard likely spam submissions before they reach us. See <a href="#spam-protection">Section 8</a>.</li>
+                    <li><strong>We do not intentionally set cookies</strong>, and our website code does not use browser local storage or session storage. Netlify Forms' honeypot field does not set a cookie or identifier &mdash; it's simply a hidden form field.</li>
                     <li>Our website loads <strong>web fonts from Google Fonts</strong> (Inter and Lexend Deca typefaces) so text displays consistently. Loading a font file involves your browser making a request to Google's font-hosting infrastructure, which may receive your IP address and standard browser request information as part of that request, subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's own privacy policy</a>.</li>
                     <li>Our homepage embeds a <strong>Google Maps</strong> map of our service area. Loading that embedded map involves a request to Google, subject to <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's own privacy policy</a> and <a href="https://www.google.com/help/terms_maps/" target="_blank" rel="noopener">Google Maps' terms</a>.</li>
                     <li>Our hosting provider (currently Netlify) automatically processes standard web server request information (such as IP address and browser type) as a normal part of delivering our website to your browser, consistent with <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener">Netlify's own privacy policy</a>.</li>
@@ -269,7 +269,7 @@
                 <p>We do not currently use cookies for analytics, advertising, or tracking purposes. The only cookie-adjacent activity our technical review identified comes from the third-party Google services described in <a href="#automatic-info">Section 3</a> (Google Fonts and the Google Maps embed), which operate under Google's own privacy practices rather than any cookie we set ourselves. Because we do not currently operate our own non-essential cookies, we have not created a separate Cookie Policy &mdash; this section will be expanded, and a separate Cookie Policy will be created if that becomes necessary, if we add analytics, advertising pixels, or similar tracking technology in the future.</p>
 
                 <h2 id="spam-protection">8. Spam Protection</h2>
-                <p>Our website does not currently use reCAPTCHA, hCaptcha, Cloudflare Turnstile, or any other anti-spam/CAPTCHA service. If we add one in the future, we will disclose which service is used and link to that provider's privacy terms here.</p>
+                <p>Our estimate form uses a hidden honeypot field and Netlify's built-in form spam filtering to reduce spam submissions, rather than a visible CAPTCHA challenge. We do not currently use Google reCAPTCHA, hCaptcha, Cloudflare Turnstile, or any other third-party CAPTCHA service. If we add one in the future, we will disclose which service is used and link to that provider's privacy terms here.</p>
 
                 <h2 id="how-we-share">9. How We Share Information</h2>
                 <p><strong>We do not sell or trade your personal information.</strong> We share information only as reasonably necessary to run our roofing business and complete your project, including with:</p>
@@ -281,7 +281,7 @@
                     <li><strong>Other service providers</strong> reasonably involved in your specific project;</li>
                     <li><strong>Jobber</strong>, the customer relationship management (CRM) and job-management software we use to schedule and track projects and leads;</li>
                     <li><strong>Google Workspace</strong> (including Gmail and Google Drive), which we use for business email, communication, and document/photo storage;</li>
-                    <li><strong>Netlify</strong>, our website hosting provider, which delivers our website to your browser; and</li>
+                    <li><strong>Netlify</strong>, our website hosting provider, which delivers our website to your browser and processes and stores estimate-form submissions through its Netlify Forms feature (visible to us in a submissions dashboard), consistent with <a href="https://www.netlify.com/privacy/" target="_blank" rel="noopener">Netlify's own privacy policy</a>; and</li>
                     <li><strong>Government authorities or other parties</strong>, when we believe in good faith that disclosure is required by law, legal process, or is necessary to protect the rights, property, or safety of Sambrano Roofing, our customers, or others.</li>
                 </ul>
                 <p>Each of these parties only receives the information reasonably necessary for the purpose described above.</p>
