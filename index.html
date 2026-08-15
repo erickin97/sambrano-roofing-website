@@ -19,9 +19,9 @@
     <link rel="preload" as="video" href="assets/video/hero.mp4" type="video/mp4">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
-    <link href="https://googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lexend+Deca:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lexend+Deca:wght@400;600;700&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -1698,6 +1698,7 @@
                         <option>Roof Coatings</option>
                         <option>Modified Bitumen / Flat Roofing</option>
                         <option>Tile Roofing</option>
+                        <option>Tile Underlayment</option>
                         <option>Tile Lift &amp; Reset</option>
                         <option>Shingle Roofing</option>
                         <option>Parapet Repair</option>
@@ -2085,6 +2086,26 @@
                 if (e.key === 'ArrowLeft') showNext(-1);
                 if (e.key === 'ArrowRight') showNext(1);
             });
+        })();
+    </script>
+
+    <!-- Pre-select the estimate-form service dropdown when a visitor arrives from a
+         service-page CTA carrying a ?service= query parameter, e.g. index.html?service=Parapet%20Repair#contact -->
+    <script>
+        (function () {
+            const params = new URLSearchParams(window.location.search);
+            const requestedService = params.get('service');
+            const select = document.getElementById('service');
+            if (!requestedService || !select) return;
+
+            const matchingOption = Array.from(select.options).find(function (option) {
+                return option.value.trim().toLowerCase() === requestedService.trim().toLowerCase() ||
+                    option.textContent.trim().toLowerCase() === requestedService.trim().toLowerCase();
+            });
+
+            if (matchingOption) {
+                select.value = matchingOption.value;
+            }
         })();
     </script>
 </body>
