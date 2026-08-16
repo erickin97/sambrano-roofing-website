@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Received | Sambrano Roofing & Exterior LLC</title>
+    <meta name="description" content="Your free roofing estimate request has been received by Sambrano Roofing & Exterior LLC.">
+    <link rel="canonical" href="https://sambranoroofing.com/thank-you.html">
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <meta name="robots" content="noindex, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lexend+Deca:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --charcoal: #12161A;
+            --charcoal-muted: #1A1F26;
+            --deep-blue: #0A192F;
+            --accent-gold: #C9A227;
+            --accent-gold-hover: #AD8A20;
+            --text-light: #F4F5F6;
+            --text-dark: #12161A;
+            --text-muted: #64748B;
+            --border-color: #2A3342;
+            --font-sans: 'Inter', sans-serif;
+            --font-heading: 'Lexend Deca', sans-serif;
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: 16px; background-color: var(--charcoal); color: var(--text-light); }
+        body { font-family: var(--font-sans); line-height: 1.6; overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+        p { font-weight: 300; color: #94A3B8; }
+        a { text-decoration: none; color: var(--accent-gold); transition: var(--transition); }
+        a:hover { color: var(--accent-gold-hover); text-decoration: underline; }
+
+        .container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: 5rem 0; }
+
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 1rem 2rem; font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; border-radius: 4px; cursor: pointer; transition: var(--transition); border: none; text-decoration: none; }
+        .btn-primary { background-color: var(--accent-gold); color: var(--white); }
+        .btn-primary:hover { background-color: var(--accent-gold-hover); transform: translateY(-2px); text-decoration: none; }
+        .btn-secondary { background-color: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px); }
+        .btn-secondary:hover { border-color: var(--white); background-color: rgba(255,255,255,0.05); transform: translateY(-2px); text-decoration: none; }
+        .btn-call { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 1.5rem; font-size: 0.85rem; font-weight: 500; color: #CBD5E1; border: 1px solid rgba(255,255,255,0.12); border-radius: 4px; background: transparent; transition: var(--transition); }
+        .btn-call svg { width: 16px; height: 16px; stroke: var(--accent-gold); flex-shrink: 0; }
+        .btn-call:hover { color: var(--white); border-color: var(--accent-gold-hover); transform: translateY(-2px); text-decoration: none; }
+
+        .nav-bar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background-color: rgba(18,22,26,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); transition: var(--transition); }
+        .nav-container { display: flex; align-items: center; justify-content: space-between; height: 90px; }
+        .brand-logo { display: flex; align-items: center; gap: 0.85rem; }
+        .brand-logo img { height: 56px; width: auto; flex-shrink: 0; }
+        .logo-mark { content: url("assets/logo/logo-white.png"); }
+        .theme-light .logo-mark { content: url("assets/logo/logo-color.png"); }
+        .brand-text { display: flex; flex-direction: column; }
+        .brand-name { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: var(--white); letter-spacing: -0.01em; }
+        .brand-sub { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--text-muted); margin-top: 2px; }
+        .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+        .nav-link { font-size: 0.85rem; font-weight: 400; color: #94A3B8; }
+        .nav-link:hover { color: var(--white); text-decoration: none; }
+        .nav-actions { display: flex; align-items: center; gap: 1.5rem; }
+        .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; }
+        .nav-toggle span { width: 22px; height: 2px; background-color: var(--white); transition: var(--transition); }
+
+        .trust-bar { margin-top: 90px; background-color: var(--charcoal-muted); border-bottom: 1px solid var(--border-color); padding: 0.65rem 0; }
+        .trust-bar .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.35rem 1.5rem; }
+        .trust-bar p { margin: 0; font-size: 0.78rem; }
+
+        .confirm-wrap { max-width: 640px; margin: 0 auto; text-align: center; }
+        .confirm-icon { width: 64px; height: 64px; border-radius: 50%; background-color: var(--charcoal-muted); border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; }
+        .confirm-icon svg { width: 28px; height: 28px; stroke: var(--accent-gold); }
+        .confirm-wrap h1 { font-size: 2.25rem; color: var(--white); margin-bottom: 1.25rem; }
+        .confirm-wrap p { font-size: 1.05rem; margin-bottom: 1.25rem; }
+        .confirm-actions { display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
+
+        footer { background-color: var(--charcoal); padding: 4rem 0 2rem; border-top: 1px solid var(--border-color); }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid var(--border-color); }
+        .footer-brand p { font-size: 0.85rem; margin-top: 1rem; max-width: 280px; }
+        .footer-col h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--white); margin-bottom: 1.25rem; }
+        .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin: 0; }
+        .footer-col li { margin: 0; }
+        .footer-col a { font-size: 0.85rem; color: #94A3B8; }
+        .footer-col a:hover { color: var(--accent-gold); text-decoration: none; }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; flex-wrap: wrap; gap: 1rem; }
+        .footer-bottom p { font-size: 0.78rem; color: var(--text-muted); }
+        .footer-license { font-size: 0.78rem; color: var(--text-muted); }
+
+        .brand-logo:focus-visible,
+        .nav-link:focus-visible,
+        .nav-toggle:focus-visible,
+        .btn:focus-visible,
+        .btn-call:focus-visible,
+        .footer-col a:focus-visible {
+            outline: 2px solid var(--accent-gold);
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 900px) {
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .nav-links, .nav-actions .btn-secondary, .nav-actions .btn-primary { display: none; }
+            .nav-toggle { display: flex; }
+            .nav-links.mobile-open { display: flex; flex-direction: column; position: absolute; top: 90px; left: 0; width: 100%; background-color: rgba(18,22,26,0.98); padding: 1.5rem 2rem; gap: 1.25rem; border-bottom: 1px solid var(--border-color); }
+            section { padding: 3.5rem 0; }
+            .confirm-wrap h1 { font-size: 1.85rem; }
+        }
+
+        @media (max-width: 560px) {
+            .confirm-actions { flex-direction: column; align-items: stretch; width: 100%; }
+            .confirm-actions .btn, .confirm-actions .btn-call { width: 100%; text-align: center; justify-content: center; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-mark" src="assets/logo/logo-white.png" alt="SR Roofing logo">
+                <span class="brand-text">
+                    <span class="brand-name">Sambrano Roofing</span>
+                    <span class="brand-sub">&amp; Exterior LLC</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#areas" class="nav-link">Service Areas</a></li>
+                <li><a href="index.html#process" class="nav-link">Process</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:15205541292" class="btn btn-secondary">(520) 554-1292</a>
+                <a href="index.html#contact" class="btn btn-primary">Get Free Estimate</a>
+                <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('mobile-open')">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="trust-bar">
+        <div class="container">
+            <p style="letter-spacing: 0.05em; color: var(--white); font-weight: 500;">LICENSED &bull; BONDED &bull; INSURED &bull; ROC #367370</p>
+            <p style="color: var(--text-muted);">Sambrano Roofing &amp; Exterior LLC | CR-42 Roofing</p>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="confirm-wrap">
+                <div class="confirm-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                </div>
+                <h1>Request Received</h1>
+                <p>Thank you &mdash; your request has been received. We'll review your information and contact you using the information you provided.</p>
+                <p>If your matter is urgent, you're welcome to call or text us directly in the meantime.</p>
+                <div class="confirm-actions">
+                    <a href="index.html" class="btn btn-primary">Back to Home</a>
+                    <a href="tel:15205541292" class="btn-call">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        Call or Text (520) 554-1292
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand-name">Sambrano Roofing &amp; Exterior LLC</span>
+                    <p>Licensed, bonded, and insured roofing contractor serving Tucson and Southern Arizona. Owned and operated by Jose Erick Sambrano Torres.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="roof-coatings.html">Roof Coatings</a></li>
+                        <li><a href="modified-bitumen-roofing.html">Modified Bitumen / Flat Roofing</a></li>
+                        <li><a href="tile-roofing.html">Tile Roofing</a></li>
+                        <li><a href="tile-underlayment.html">Tile Underlayment</a></li>
+                        <li><a href="shingle-roofing.html">Shingle Roofing</a></li>
+                        <li><a href="parapet-roofing.html">Parapet Roofing &amp; Repairs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#areas">Service Areas</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:15205541292">(520) 554-1292</a></li>
+                        <li><a href="mailto:info@sambranoroofing.com">info@sambranoroofing.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sambrano Roofing &amp; Exterior LLC. All rights reserved.</p>
+                <p class="footer-license">Licensed, Bonded &amp; Insured &middot; ROC #367370</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('click', function (e) {
+            const nav = document.querySelector('.nav-links');
+            const toggle = document.querySelector('.nav-toggle');
+            if (nav && nav.classList.contains('mobile-open') && !nav.contains(e.target) && !toggle.contains(e.target)) {
+                nav.classList.remove('mobile-open');
+            }
+        });
+    </script>
+</body>
+</html>
