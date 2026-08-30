@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roofing Knowledge Center | Sambrano Roofing & Exterior LLC</title>
+    <meta name="description" content="Licensed Tucson roofing contractor (ROC #367370) explains roof leaks, ponding water, scuppers, wall transitions, and repair vs. replacement in plain English.">
+    <link rel="canonical" href="https://sambranoroofing.com/roofing-knowledge-center.html">
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Roofing Knowledge Center | Sambrano Roofing & Exterior LLC">
+    <meta property="og:description" content="Licensed Tucson roofing contractor (ROC #367370) explains roof leaks, ponding water, scuppers, wall transitions, and repair vs. replacement in plain English.">
+    <meta property="og:url" content="https://sambranoroofing.com/roofing-knowledge-center.html">
+    <meta property="og:image" content="https://sambranoroofing.com/assets/logo/logo-color.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lexend+Deca:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --charcoal: #12161A;
+            --charcoal-muted: #1A1F26;
+            --deep-blue: #0A192F;
+            --accent-gold: #C9A227;
+            --accent-gold-hover: #AD8A20;
+            --text-light: #F4F5F6;
+            --text-dark: #12161A;
+            --text-muted: #64748B;
+            --border-color: #2A3342;
+            --font-sans: 'Inter', sans-serif;
+            --font-heading: 'Lexend Deca', sans-serif;
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-size: 16px; background-color: var(--charcoal); color: var(--text-light); }
+        body { font-family: var(--font-sans); line-height: 1.6; overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+        p { font-weight: 300; color: #94A3B8; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+
+        .container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: 6rem 0; border-bottom: 1px solid var(--border-color); }
+        .section-header { max-width: 720px; margin-bottom: 3rem; }
+        .section-badge { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-gold); font-weight: 600; display: inline-block; margin-bottom: 1rem; }
+        .section-title { font-size: 2.25rem; color: var(--white); margin-bottom: 1.5rem; }
+
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 1rem 2rem; font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; border-radius: 4px; cursor: pointer; transition: var(--transition); border: none; }
+        .btn-primary { background-color: var(--accent-gold); color: var(--white); }
+        .btn-primary:hover { background-color: var(--accent-gold-hover); transform: translateY(-2px); box-shadow: 0 8px 20px -6px rgba(201, 162, 39, 0.45); }
+        .btn-secondary { background-color: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px); }
+        .btn-secondary:hover { border-color: var(--white); background-color: rgba(255,255,255,0.05); transform: translateY(-2px); }
+        .btn-call { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 1.5rem; font-size: 0.85rem; font-weight: 500; color: #CBD5E1; border: 1px solid rgba(255,255,255,0.12); border-radius: 4px; background: transparent; transition: var(--transition); }
+        .btn-call svg { width: 16px; height: 16px; stroke: var(--accent-gold); flex-shrink: 0; }
+        .btn-call:hover { color: var(--white); border-color: var(--accent-gold-hover); transform: translateY(-2px); }
+
+        /* Navigation — identical to homepage */
+        .nav-bar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background-color: rgba(18,22,26,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); transition: var(--transition); }
+        .nav-container { display: flex; align-items: center; justify-content: space-between; height: 90px; }
+        .brand-logo { display: flex; align-items: center; gap: 0.85rem; }
+        .brand-logo img { height: 56px; width: auto; flex-shrink: 0; }
+        .logo-mark { content: url("assets/logo/logo-white.png"); }
+        .theme-light .logo-mark { content: url("assets/logo/logo-color.png"); }
+        .brand-text { display: flex; flex-direction: column; }
+        .brand-name { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: var(--white); letter-spacing: -0.01em; }
+        .brand-sub { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--text-muted); margin-top: 2px; }
+        .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+        .nav-link { font-size: 0.85rem; font-weight: 400; color: #94A3B8; }
+        .nav-link:hover { color: var(--white); }
+        .nav-actions { display: flex; align-items: center; gap: 1.5rem; }
+        .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; }
+        .nav-toggle span { width: 22px; height: 2px; background-color: var(--white); transition: var(--transition); }
+
+        /* Trust bar — identical to homepage */
+        .trust-bar { margin-top: 90px; background-color: var(--charcoal-muted); border-bottom: 1px solid var(--border-color); padding: 0.65rem 0; }
+        .trust-bar .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.35rem 1.5rem; }
+        .trust-bar p { margin: 0; font-size: 0.78rem; }
+
+        /* Page header band */
+        .page-header { padding: 4.5rem 0 3.5rem; border-bottom: 1px solid var(--border-color); background-color: var(--deep-blue); }
+        .breadcrumb { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.5rem; }
+        .breadcrumb a { color: var(--text-muted); }
+        .breadcrumb a:hover { color: var(--accent-gold); }
+        .page-header h1 { font-size: 2.75rem; color: var(--white); margin-bottom: 1.25rem; max-width: 820px; }
+        .page-header .lede { font-size: 1.1rem; color: #E2E8F0; max-width: 680px; margin-bottom: 2rem; }
+        .page-header-actions { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        .info-card { background-color: var(--charcoal-muted); border: 1px solid var(--border-color); padding: 2.5rem; border-radius: 4px; transition: var(--transition); }
+        .info-card:hover { border-color: rgba(255,255,255,0.15); }
+        .info-card h3 { font-size: 1.15rem; color: var(--white); margin-bottom: 0.85rem; }
+        .info-card p { font-size: 0.92rem; }
+        a.info-card { display: block; }
+        a.info-card:hover { border-color: var(--accent-gold); }
+        a.info-card .card-link { display: inline-block; margin-top: 1rem; font-size: 0.82rem; color: var(--accent-gold); }
+
+        .process-list { display: flex; flex-direction: column; }
+        .process-step { display: grid; grid-template-columns: 100px 1fr; gap: 2rem; padding: 2rem 0; border-top: 1px solid var(--border-color); }
+        .process-step:last-child { border-bottom: 1px solid var(--border-color); }
+        .process-number { font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent-gold); font-weight: 600; }
+        .process-body h3 { font-size: 1.1rem; color: var(--white); margin-bottom: 0.5rem; }
+        .process-body p { max-width: 560px; }
+
+        .photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+        .photo-card { border-radius: 4px; overflow: hidden; border: 1px solid var(--border-color); background-color: var(--charcoal-muted); }
+        .photo-card img { width: 100%; height: 260px; object-fit: cover; display: block; }
+        .photo-caption { padding: 1rem 1.25rem; font-size: 0.85rem; color: var(--text-muted); }
+        .photo-pending { border: 1px dashed var(--border-color); border-radius: 4px; padding: 3rem 2rem; text-align: center; color: var(--text-muted); font-size: 0.9rem; background-color: var(--charcoal-muted); }
+
+        .callout { background-color: var(--charcoal-muted); border: 1px solid var(--border-color); border-left: 3px solid var(--accent-gold); padding: 1.75rem 2rem; border-radius: 4px; }
+        .callout h3 { font-size: 1rem; color: var(--white); margin-bottom: 0.75rem; }
+        .callout p { font-size: 0.92rem; }
+        .callout-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+
+        .faq-item { border-top: 1px solid var(--border-color); padding: 1.75rem 0; }
+        .faq-item:last-child { border-bottom: 1px solid var(--border-color); }
+        .faq-item h3 { font-size: 1.05rem; color: var(--white); margin-bottom: 0.6rem; }
+        .faq-item p { font-size: 0.92rem; }
+
+        .cta-band { background-color: var(--deep-blue); border-bottom: none; }
+        .cta-band-inner { text-align: center; }
+        .cta-band h2 { font-size: 2rem; color: var(--white); margin-bottom: 1rem; }
+        .cta-band p { color: #CBD5E1; max-width: 560px; margin: 0 auto 2rem; }
+        .cta-actions { display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+
+        /* Topic-nav specific */
+        .topic-nav-badge { display: inline-block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); border: 1px solid var(--border-color); border-radius: 3px; padding: 0.2rem 0.55rem; margin-bottom: 0.75rem; }
+        .disclaimer-callout { max-width: 860px; }
+        .disclaimer-callout p a { color: var(--accent-gold); text-decoration: underline; }
+        .section-lede-link { color: var(--accent-gold); text-decoration: underline; }
+
+        footer { background-color: var(--charcoal); padding: 4rem 0 2rem; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid var(--border-color); }
+        .footer-brand p { font-size: 0.85rem; margin-top: 1rem; max-width: 280px; }
+        .footer-col h4 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--white); margin-bottom: 1.25rem; }
+        .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+        .footer-col a { font-size: 0.85rem; color: #94A3B8; }
+        .footer-col a:hover { color: var(--accent-gold); }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 2rem; flex-wrap: wrap; gap: 1rem; }
+        .footer-bottom p { font-size: 0.78rem; color: var(--text-muted); }
+        .footer-license { font-size: 0.78rem; color: var(--text-muted); }
+
+        .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+        .brand-logo:focus-visible,
+        .nav-link:focus-visible,
+        .nav-toggle:focus-visible,
+        .btn:focus-visible,
+        .btn-call:focus-visible,
+        .footer-col a:focus-visible,
+        .breadcrumb a:focus-visible,
+        a.info-card:focus-visible {
+            outline: 2px solid var(--accent-gold);
+            outline-offset: 3px;
+        }
+
+        @media (max-width: 900px) {
+            .page-header h1 { font-size: clamp(2rem, 6vw, 2.5rem); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .nav-links, .nav-actions .btn-secondary, .nav-actions .btn-primary { display: none; }
+            .nav-toggle { display: flex; }
+            .nav-links.mobile-open { display: flex; flex-direction: column; position: absolute; top: 90px; left: 0; width: 100%; background-color: rgba(18,22,26,0.98); padding: 1.5rem 2rem; gap: 1.25rem; border-bottom: 1px solid var(--border-color); }
+            section { padding: 4rem 0; }
+            .section-title { font-size: 1.85rem; }
+            .process-step { grid-template-columns: 60px 1fr; }
+        }
+
+        @media (max-width: 560px) {
+            .page-header-actions, .cta-actions { flex-direction: column; align-items: stretch; width: 100%; }
+            .page-header-actions .btn, .page-header-actions .btn-call,
+            .cta-actions .btn, .cta-actions .btn-call { width: 100%; text-align: center; justify-content: center; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+            .reveal { opacity: 1 !important; transform: none !important; }
+        }
+    </style>
+
+    <!-- JSON-LD (BreadcrumbList + FAQPage) inserted below this line by a build script that
+         extracts the FAQ schema verbatim from the visible .faq-item content on this page,
+         so the structured data can never drift from what a visitor actually reads. -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://sambranoroofing.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Roofing Knowledge Center",
+      "item": "https://sambranoroofing.com/roofing-knowledge-center.html"
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why might an interior leak not be directly below the source of the roof leak?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because water follows paths, not straight lines. A proper diagnosis traces the possible routes water could have taken to get there \u2014 roof slope and drainage direction, areas uphill from the interior stain, nearby scuppers and penetrations, pipe boots, crickets and saddles, parapet walls, flashing, nearby stucco condition, previous repairs, and rooftop equipment that could be redirecting water. We won't tell you a leak is fixed just because we sealed the ceiling directly above the stain \u2014 if the real entry point is somewhere else, that repair won't hold."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does a professional roof leak diagnosis actually involve?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It starts with understanding the roof's slope and drainage path, then working uphill from where the leak shows up inside \u2014 checking penetrations, flashing, seams, and any nearby drainage features before assuming the closest visible damage is the cause. On a complex roof, this can take real time to do properly, which is part of why we don't guess."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do some roof leaks take more than one visit to find?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Intermittent leaks \u2014 ones that only show up during certain storm directions, wind speeds, or after enough rain has fallen to overwhelm a marginal drainage point \u2014 don't always reproduce on demand. Multiple previous repairs in the same area can also mask the real entry point until earlier patches are opened up and inspected."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What causes ponding water on a flat roof?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually more than one thing at once. Common causes include the roof's original drainage design, a drain outlet or scupper positioned higher than the surrounding roof slope, a raised or distorted drip edge, structural deflection in the deck below, previous repairs that changed how water moves across the roof, debris accumulation, blocked scuppers or gutters, water directed onto the roof from another source, or rooftop equipment and its supports interfering with the drainage path. Which of these applies to a specific roof is something an inspection has to determine."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can ponding water be repaired without replacing the entire roof?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often, yes \u2014 moderate or even larger ponding areas can sometimes be addressed without a full roof replacement, as long as the underlying structure is sound. Depending on the cause, that can mean a drainage correction, carefully designed leveling or fill work, appropriate insulation or other compatible material, or reinforcement in specific high-stress or high-water-traffic areas. If the roof deck is visibly or significantly deflecting, that's a different situation \u2014 see Repair vs. Replacement below."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can filling a low spot create another drainage problem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, if it's done without understanding where the water is actually supposed to go. Raising one low spot without addressing the roof's overall drainage path can simply push the ponding to a new low spot nearby instead of resolving it. This is also why fabric reinforcement isn't automatically the correct fix for every ponding area \u2014 it's a useful tool in the right high-stress location, but using it without understanding the drainage first can create the same kind of new problem. Even a prior repair can cause this: a heavy patch applied without accounting for drainage can itself become a raised obstruction that redirects water somewhere new."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is a roof coating repair appropriate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "When the existing roof substrate is sound and the coating \u2014 and any reinforcement \u2014 can be matched to what's actually causing the problem, not applied as a generic fix. In some high-stress or high-water-traffic areas, that can include a reinforced coating detail, but that reinforcement is one tool we reach for when it's appropriate for the specific area, not something applied automatically to every repair. A coating repair applied without first understanding why the original area failed, or without addressing drainage, can end up just moving or masking the problem rather than solving it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a roof coating and the roofing system underneath it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The visible surface of a roof isn't always the only thing keeping water out. Depending on the roofing system \u2014 tile, built-up roofing, modified bitumen, or a coated flat roof \u2014 there can be multiple layers doing different jobs, and the coating or top layer you see is often one part of that system, not the whole waterproofing story. See our Roof Coatings and Modified Bitumen & Flat Roofing pages for the specifics of each."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between silicone and acrylic (elastomeric) coatings?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both are coating systems used on appropriate existing roofs, but they're different chemistries with different strengths, application requirements, and typical price points. Which one is appropriate for a given roof depends on the existing substrate, moisture exposure, ponding conditions, and manufacturer compatibility requirements, which is why we evaluate the specific roof rather than defaulting to one product."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I apply a silicone roof coating from a home-improvement store myself?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Silicone can be an excellent roofing material when it's appropriate for the roofing system and installed correctly \u2014 that's not in question. What tends to go wrong isn't the product, it's everything around it: compatibility with what's already on the roof, surface cleaning and preparation, adhesion, drainage and ponding conditions, and applying the product at the thickness and coverage a specific product actually requires, which varies by product and system rather than following one universal rule. Silicone is also generally more expensive than many acrylic coating systems, and installation cost depends on the roof system, preparation needed, and project scope \u2014 we're not going to publish a fixed price here, since it moves with the market and the specific product. We're not against silicone. We're against treating an expensive roofing system like a tube of caulk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I apply silicone over an existing acrylic or elastomeric roof coating?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not automatically \u2014 and not automatically no, either. Whether a new coating can go over what's already there depends on whether the two materials are actually compatible, the condition and cleanliness of the existing surface, and what the new product's manufacturer requires for application over an existing coating. A retail silicone product isn't automatically compatible with whatever is currently on your roof, and applying one without checking compatibility first can lead to adhesion problems down the road. This is worth evaluating specifically for your roof before buying a product, not assumed either way."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is my roof coating peeling or bubbling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Peeling or bubbling coating is commonly a sign of an adhesion problem \u2014 which can trace back to surface preparation, moisture trapped beneath the coating at the time of application, incompatibility between the coating and what was already on the roof, or a coating applied outside its recommended conditions. It's worth having it looked at directly rather than guessed at."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can debris contribute to roof leaks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Debris isn't just cosmetic. Leaves, branches, seed pods, and similar material collecting near scuppers, drains, transitions, gutters, or rooftop equipment can block drainage, hold moisture against the roofing surface, hide cracks or deterioration underneath it, cause water to back up instead of draining away, and increase how much water sits in one localized area. A drainage point that looks fine when it's clear can behave very differently once debris has partially blocked it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why do gutters and scuppers need to be inspected together?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Where a scupper drains into a gutter, a clogged gutter downstream can back water up toward the scupper itself, and if that backup rises high enough, water can be pushed into areas it was never intended to reach. This is a pattern we've seen directly \u2014 a parapet-wall scupper connected to a gutter that had become clogged, which backed water up and let it rise into areas it wasn't designed to travel. That's exactly why we look at a scupper and its downstream gutter as one drainage system, not two separate things to check in isolation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can previous roof repairs create new drainage problems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, sometimes \u2014 though not always, and a previous repair isn't automatically something to condemn. A patch can solve a localized problem correctly. But a poorly designed one can also redirect water, trap debris, create a raised area that acts as a new obstruction, or interfere with drainage that worked fine before the patch was added. That's why the right question isn't simply \"can this be patched again?\" \u2014 it's \"what caused the original problem, and will this repair address that cause without creating a different one?\" See Repair vs. Replacement below for how that fits into our broader recommendation process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are base flashing and counterflashing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Base flashing is the material installed where the roof meets a vertical wall, forming the first waterproofing layer at that transition. Counterflashing sits above and overlaps the base flashing, typically anchored into the wall itself, and its job is to shed water down and over the base flashing rather than letting it get behind it. Together they're meant to work as a system: water hits the wall, is directed onto the counterflashing, sheds down over the base flashing, and continues onto the roof surface. Exact terminology and construction can vary by roofing system and by how a specific wall was built."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can stucco and wall transitions contribute to roof leaks?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A roof-to-wall transition brings together more materials and more potential failure points than the open roof field does \u2014 the roofing material itself, base flashing, counterflashing, and the wall's own stucco or finish. Cracked or deteriorated stucco above the roofline can let water behind the flashing system entirely, bypassing the roof's waterproofing altogether. That's part of why a wall-adjacent leak often needs a different kind of inspection than one in the middle of an open roof."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should be inspected around parapet walls?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Coping or cap condition at the top of the parapet, the roof-to-wall transition and its flashing, stucco condition on the parapet face, sealant joints, drainage at and near any scuppers, and whether prior patches nearby have changed how water reaches those features. Our Parapet Roofing & Repairs page covers our repair process for this area in more depth."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why are parapet caps sometimes a better long-term solution?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A parapet cap covers and protects the top of the parapet wall \u2014 one of the more exposed, weather-beaten parts of a flat-roof building \u2014 which can reduce how much water reaches the wall assembly in the first place, rather than relying on repeated resealing or recoating of an exposed stucco or masonry top. That can make it a strong long-term option in the right situation. It isn't automatically the best solution for every building, though \u2014 HOA rules, the building's design and aesthetics, existing construction, and the overall project scope can all affect whether a cap is the right fit, and we wouldn't recommend one without evaluating your specific parapet first."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "My skylight is leaking \u2014 should the area just be sealed with more caulk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not automatically. A skylight has multiple components and its own drainage paths, and a leak can originate from the glazing, the flashing, the curb transition, or a failed seal \u2014 sealing over everything can end up blocking a weep path the skylight actually needs, creating a new problem instead of solving the original one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should be inspected around roof penetrations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pipe boots and plumbing vents, the flashing or collar around each penetration, sealant condition, and whether the surrounding roofing material is still adhered and intact right up to the penetration. Penetrations are one of the more common places for a small gap to develop over time, simply because they interrupt an otherwise continuous roofing surface."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do solar panels need to be removed before roofing work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the roofing system, the scope of work, access, the panel configuration, and manufacturer requirements \u2014 there's no single answer that applies to every install, and solar equipment can meaningfully complicate both the scope and sequencing of a roofing project. We evaluate roofing work around existing solar equipment, but we don't perform electrical or solar work ourselves. Where panels need to come off and go back on, that requires coordinating with a qualified, licensed solar provider."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why can rooftop cables become a leak risk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cables and wires laid directly across a roofing surface can shift in the wind, get stepped on during maintenance, trap debris underneath them, and make it harder to properly inspect the roofing surface they're covering. We don't recommend coating cables directly into the roofing system as a general practice, since that can trap them in place and make future roof or cable maintenance more difficult. That said, we don't move, cut, disconnect, or otherwise alter electrical or communications cables ourselves \u2014 any live electrical equipment needs to be handled by a qualified professional, and we'll coordinate with the appropriate provider rather than working around it ourselves."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do condensation lines affect a roof?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A condensation line or similar rooftop discharge point creates concentrated water exposure in one specific spot, and repeated discharge in the same location over time can accelerate wear there \u2014 it's worth evaluating as part of the overall roofing system, not treated as separate from it. We're not making a claim that all condensate, or all municipal water, damages every roofing product at some fixed rate; that depends on the roofing system and the specific discharge point. The practical point is simpler: a line that's been dripping in the same spot for a long time deserves a look during leak diagnosis and routine maintenance, like any other rooftop feature."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you decide between roof repair and replacement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The goal of an estimate isn't to sell the biggest job possible \u2014 it's to properly evaluate the roof's condition and translate that diagnosis into the scope of work that actually makes sense for it. A smaller repair can be entirely appropriate when it addresses the actual problem and can reasonably be expected to perform. What actually factors into the recommendation: age of the roofing system, its overall condition beyond just the visible problem area, how many previous repairs already exist and whether they're still functioning, deck condition, drainage, the extent of any deterioration, whether existing materials are still compatible with additional repair work, and cost-effectiveness of repair versus replacement over time. We aim to explain what was found, what wasn't found, and what the limitations of a proposed repair are \u2014 not just hand you a number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When does a repair stop being the responsible recommendation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Visible or significant deflection in the roof deck is one of the clearest signs. To be direct about what that does and doesn't mean: significant deck deflection can indicate a structural or substrate concern and may require further evaluation before additional roofing material is added \u2014 that's a different statement than saying a roof \"will collapse,\" which isn't a conclusion a roofing contractor is positioned to make. Other signs include a pattern of repeated repairs in the same area that keep failing, deterioration that extends well beyond the specific spot being patched, a substrate no longer compatible with additional repair work, and drainage problems that a repair keeps failing to resolve because the underlying cause was never addressed. None of these automatically mean full replacement \u2014 they mean the conversation needs to be more thorough than another patch, and if that's what an inspection finds, we'll say so directly rather than propose a repair we don't expect to hold."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if a roof has multiple previous roofing systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Multiple layers or systems stacked over time can complicate both diagnosis and repair \u2014 each layer can hide what's beneath it, and materials from different systems aren't always compatible with each other or with a new repair. What that means for your roof specifically depends on what's actually there, which is something we'd confirm during an inspection rather than assume from the number of layers alone."
+      }
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+
+    <!-- Navigation — identical to homepage, links back to homepage anchors -->
+    <nav class="nav-bar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-mark" src="assets/logo/logo-white.png" alt="SR Roofing logo">
+                <span class="brand-text">
+                    <span class="brand-name">Sambrano Roofing</span>
+                    <span class="brand-sub">&amp; Exterior LLC</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#areas" class="nav-link">Service Areas</a></li>
+                <li><a href="index.html#process" class="nav-link">Process</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="tel:15205541292" class="btn btn-secondary">(520) 554-1292</a>
+                <a href="index.html#contact" class="btn btn-primary">Get Free Estimate</a>
+                <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('mobile-open')">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="trust-bar">
+        <div class="container">
+            <p style="letter-spacing: 0.05em; color: var(--white); font-weight: 500;">LICENSED &bull; BONDED &bull; INSURED &bull; ROC #367370</p>
+            <p style="color: var(--text-muted);">Sambrano Roofing &amp; Exterior LLC | CR-42 Roofing</p>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <p class="breadcrumb"><a href="index.html">Home</a> / Roofing Knowledge Center</p>
+            <h1>Roofing Knowledge Center</h1>
+            <p class="lede">Plain-English answers to the roofing questions Tucson homeowners actually ask — how we diagnose a leak, what ponding water does and doesn't mean, why scuppers and wall transitions cause more problems than the open roof field, and how we decide between a repair and something bigger.</p>
+            <div class="page-header-actions">
+                <a href="index.html#contact" class="btn btn-primary">Request an Inspection</a>
+                <a href="tel:15205541292" class="btn-call">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Call or Text (520) 554-1292
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Our Approach -->
+    <section>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Our Approach</span>
+                <h2 class="section-title">How we approach a roofing problem</h2>
+                <p>Every recommendation on this site — and every recommendation we make in person — starts with understanding what's actually happening on your roof, not with deciding what to sell. That's slower than handing out a generic quote, but it's the only way we know how to give you a scope of work that actually matches your roof's condition.</p>
+            </div>
+            <div class="card-grid">
+                <div class="info-card reveal">
+                    <h3>Diagnose First</h3>
+                    <p>We look at what's causing a problem before recommending how to fix it. An interior leak, a damaged tile, or a ponding area can each have more than one possible cause, and the right fix depends on which one actually applies to your roof.</p>
+                </div>
+                <div class="info-card reveal">
+                    <h3>Match the Scope to the Condition</h3>
+                    <p>A repair can be entirely appropriate when it addresses the real cause and can reasonably be expected to hold. We don't default to recommending replacement when a responsible repair makes sense — and we won't recommend a repair we don't expect to actually solve the problem, either.</p>
+                </div>
+                <div class="info-card reveal">
+                    <h3>Different Work Means Different Things</h3>
+                    <p>A temporary repair buys time and isn't meant to be permanent. A maintenance repair addresses normal wear as part of ongoing upkeep. A substantial repair addresses a real underlying problem in a specific area. Replacement addresses a roofing system that's beyond what any of the above can responsibly fix. We'll tell you which one we're actually proposing, not leave it vague.</p>
+                </div>
+                <div class="info-card reveal">
+                    <h3>Explain What We Find</h3>
+                    <p>You should understand why we're recommending what we're recommending — what we found, what we didn't find, and the limitations of a proposed repair. If we're not sure about something, we'll say so instead of guessing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer -->
+    <section>
+        <div class="container">
+            <div class="callout disclaimer-callout reveal">
+                <h3>General information, not a diagnosis of your roof</h3>
+                <p>Everything in this Knowledge Center is general and educational — it's meant to help you understand common roofing issues and ask better questions, not to diagnose your specific roof. Roofing conditions vary by property, and whether a specific repair will work on your roof can only be confirmed by a physical, on-site inspection. See our <a href="terms-conditions.html#no-substitute">Terms &amp; Conditions</a> for more on how to use this information. If you're seeing a specific problem right now, the fastest way to get a real answer is to <a href="index.html#contact">request an inspection</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topic Navigation -->
+    <section id="topics">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Browse by Topic</span>
+                <h2 class="section-title">Find your topic</h2>
+                <p>Jump to the section that matches what you're dealing with. Each one covers what we typically look at and the questions we hear most from Tucson homeowners.</p>
+            </div>
+            <div class="card-grid">
+                <a href="#leak-diagnosis" class="info-card reveal">
+                    <span class="topic-nav-badge">01</span>
+                    <h3>Leak Diagnosis</h3>
+                    <p>Why the water stain inside your house might not be directly below where water is entering the roof.</p>
+                </a>
+                <a href="#ponding" class="info-card reveal">
+                    <span class="topic-nav-badge">02</span>
+                    <h3>Flat Roofs &amp; Ponding</h3>
+                    <p>What causes standing water on a flat roof, and when it is and isn't something to be concerned about.</p>
+                </a>
+                <a href="#roof-coatings-topic" class="info-card reveal">
+                    <span class="topic-nav-badge">03</span>
+                    <h3>Roof Coatings</h3>
+                    <p>What a coating actually does, when a coating repair makes sense, and the honest answer on DIY silicone.</p>
+                </a>
+                <a href="#drainage-scuppers" class="info-card reveal">
+                    <span class="topic-nav-badge">04</span>
+                    <h3>Drainage &amp; Scuppers</h3>
+                    <p>Why scuppers, gutters, and debris need to be looked at as one drainage system, not separately.</p>
+                </a>
+                <a href="#wall-transitions" class="info-card reveal">
+                    <span class="topic-nav-badge">05</span>
+                    <h3>Flashing &amp; Wall Transitions</h3>
+                    <p>What we check when a leak shows up near a parapet or exterior wall instead of the open roof field.</p>
+                </a>
+                <a href="#rooftop-equipment" class="info-card reveal">
+                    <span class="topic-nav-badge">06</span>
+                    <h3>Rooftop Equipment</h3>
+                    <p>Skylights, solar, HVAC, cables, and condensation lines — what's ours to evaluate, and what isn't.</p>
+                </a>
+                <a href="#repair-vs-replacement" class="info-card reveal">
+                    <span class="topic-nav-badge">07</span>
+                    <h3>Repair vs. Replacement</h3>
+                    <p>How we decide, and when a repair stops being the responsible recommendation.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 01 Leak Diagnosis -->
+    <section id="leak-diagnosis">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">01 &middot; Leak Diagnosis</span>
+                <h2 class="section-title">Why the leak inside your house isn't always where you'd expect</h2>
+                <p>Water follows paths, not straight lines. It doesn't always enter a roof at the same point it shows up inside — it can travel along the underside of decking, run down a rafter or truss, follow a plane of underlayment, or move along a wall before it ever becomes visible as a stain. That's why we don't just patch whatever's directly above a water stain and call it fixed.</p>
+            </div>
+            <div class="reveal">
+                <div class="faq-item">
+                    <h3>Why might an interior leak not be directly below the source of the roof leak?</h3>
+                    <p>Because water follows paths, not straight lines. A proper diagnosis traces the possible routes water could have taken to get there — roof slope and drainage direction, areas uphill from the interior stain, nearby scuppers and penetrations, pipe boots, crickets and saddles, parapet walls, flashing, nearby stucco condition, previous repairs, and rooftop equipment that could be redirecting water. We won't tell you a leak is fixed just because we sealed the ceiling directly above the stain — if the real entry point is somewhere else, that repair won't hold.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What does a professional roof leak diagnosis actually involve?</h3>
+                    <p>It starts with understanding the roof's slope and drainage path, then working uphill from where the leak shows up inside — checking penetrations, flashing, seams, and any nearby drainage features before assuming the closest visible damage is the cause. On a complex roof, this can take real time to do properly, which is part of why we don't guess.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Why do some roof leaks take more than one visit to find?</h3>
+                    <p>Intermittent leaks — ones that only show up during certain storm directions, wind speeds, or after enough rain has fallen to overwhelm a marginal drainage point — don't always reproduce on demand. Multiple previous repairs in the same area can also mask the real entry point until earlier patches are opened up and inspected.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 02 Ponding -->
+    <section id="ponding">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">02 &middot; Flat Roofs &amp; Ponding</span>
+                <h2 class="section-title">Ponding water isn't automatically a failure</h2>
+                <p>Low-slope and flat roofs are built with some tolerance for standing water after rain. Ponding water is a real question worth looking into — not an automatic emergency — and the right response depends on what's causing it, not just that it's there.</p>
+            </div>
+            <div class="callout-grid reveal" style="margin-bottom: 3rem;">
+                <div class="callout">
+                    <h3>What we look at</h3>
+                    <p>Size and depth of the ponding area. How long water remains after rainfall. Whether the area sits in a high-foot-traffic location. Whether it's near a scupper, drain, cricket, transition, or penetration. Whether debris is accumulating there. Whether a previous repair appears to be redirecting water into that spot. Whether the deck underneath feels structurally solid or shows visible deflection. Whether the surrounding roofing system is otherwise deteriorating.</p>
+                </div>
+                <div class="callout">
+                    <h3>When it becomes more concerning</h3>
+                    <p>Standing water that's still there well after a storm has passed, that keeps returning with a growing footprint, or that's paired with visible deflection or a soft feel underfoot is worth a direct look. A shallow area that clears within a reasonable window after most rain is a different situation from a deep, persistent, growing one — we're not going to publish a fixed number of hours or days here, since how long counts as "too long" depends on the roofing system and conditions.</p>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="faq-item">
+                    <h3>What causes ponding water on a flat roof?</h3>
+                    <p>Usually more than one thing at once. Common causes include the roof's original drainage design, a drain outlet or scupper positioned higher than the surrounding roof slope, a raised or distorted drip edge, structural deflection in the deck below, previous repairs that changed how water moves across the roof, debris accumulation, blocked scuppers or gutters, water directed onto the roof from another source, or rooftop equipment and its supports interfering with the drainage path. Which of these applies to a specific roof is something an inspection has to determine.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can ponding water be repaired without replacing the entire roof?</h3>
+                    <p>Often, yes — moderate or even larger ponding areas can sometimes be addressed without a full roof replacement, as long as the underlying structure is sound. Depending on the cause, that can mean a drainage correction, carefully designed leveling or fill work, appropriate insulation or other compatible material, or reinforcement in specific high-stress or high-water-traffic areas. If the roof deck is visibly or significantly deflecting, that's a different situation — see <a href="#repair-vs-replacement" class="section-lede-link">Repair vs. Replacement</a> below.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can filling a low spot create another drainage problem?</h3>
+                    <p>Yes, if it's done without understanding where the water is actually supposed to go. Raising one low spot without addressing the roof's overall drainage path can simply push the ponding to a new low spot nearby instead of resolving it. This is also why fabric reinforcement isn't automatically the correct fix for every ponding area — it's a useful tool in the right high-stress location, but using it without understanding the drainage first can create the same kind of new problem. Even a prior repair can cause this: a heavy patch applied without accounting for drainage can itself become a raised obstruction that redirects water somewhere new.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 03 Roof Coatings -->
+    <section id="roof-coatings-topic">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">03 &middot; Roof Coatings</span>
+                <h2 class="section-title">What a coating actually does — and doesn't</h2>
+                <p>Our <a href="roof-coatings.html" class="section-lede-link">Roof Coatings</a> page covers our full process. The questions below focus on when a coating repair is the right call, and whether applying one yourself is really as simple as it looks.</p>
+            </div>
+            <div class="reveal">
+                <div class="faq-item">
+                    <h3>When is a roof coating repair appropriate?</h3>
+                    <p>When the existing roof substrate is sound and the coating — and any reinforcement — can be matched to what's actually causing the problem, not applied as a generic fix. In some high-stress or high-water-traffic areas, that can include a reinforced coating detail, but that reinforcement is one tool we reach for when it's appropriate for the specific area, not something applied automatically to every repair. A coating repair applied without first understanding why the original area failed, or without addressing drainage, can end up just moving or masking the problem rather than solving it.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What's the difference between a roof coating and the roofing system underneath it?</h3>
+                    <p>The visible surface of a roof isn't always the only thing keeping water out. Depending on the roofing system — tile, built-up roofing, modified bitumen, or a coated flat roof — there can be multiple layers doing different jobs, and the coating or top layer you see is often one part of that system, not the whole waterproofing story. See our <a href="roof-coatings.html">Roof Coatings</a> and <a href="modified-bitumen-roofing.html">Modified Bitumen &amp; Flat Roofing</a> pages for the specifics of each.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What's the difference between silicone and acrylic (elastomeric) coatings?</h3>
+                    <p>Both are coating systems used on appropriate existing roofs, but they're different chemistries with different strengths, application requirements, and typical price points. Which one is appropriate for a given roof depends on the existing substrate, moisture exposure, ponding conditions, and manufacturer compatibility requirements, which is why we evaluate the specific roof rather than defaulting to one product.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Should I apply a silicone roof coating from a home-improvement store myself?</h3>
+                    <p>Silicone can be an excellent roofing material when it's appropriate for the roofing system and installed correctly — that's not in question. What tends to go wrong isn't the product, it's everything around it: compatibility with what's already on the roof, surface cleaning and preparation, adhesion, drainage and ponding conditions, and applying the product at the thickness and coverage a specific product actually requires, which varies by product and system rather than following one universal rule. Silicone is also generally more expensive than many acrylic coating systems, and installation cost depends on the roof system, preparation needed, and project scope — we're not going to publish a fixed price here, since it moves with the market and the specific product. We're not against silicone. We're against treating an expensive roofing system like a tube of caulk.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Should I apply silicone over an existing acrylic or elastomeric roof coating?</h3>
+                    <p>Not automatically — and not automatically no, either. Whether a new coating can go over what's already there depends on whether the two materials are actually compatible, the condition and cleanliness of the existing surface, and what the new product's manufacturer requires for application over an existing coating. A retail silicone product isn't automatically compatible with whatever is currently on your roof, and applying one without checking compatibility first can lead to adhesion problems down the road. This is worth evaluating specifically for your roof before buying a product, not assumed either way.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Why is my roof coating peeling or bubbling?</h3>
+                    <p>Peeling or bubbling coating is commonly a sign of an adhesion problem — which can trace back to surface preparation, moisture trapped beneath the coating at the time of application, incompatibility between the coating and what was already on the roof, or a coating applied outside its recommended conditions. It's worth having it looked at directly rather than guessed at.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 04 Drainage & Scuppers -->
+    <section id="drainage-scuppers">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">04 &middot; Drainage &amp; Scuppers</span>
+                <h2 class="section-title">Scuppers, gutters, and debris are one system</h2>
+                <p>On a parapet-wall flat roof, scuppers are one of the highest-priority areas we look at, because a roof can look fine everywhere else while the drainage outlet itself is quietly causing the problem.</p>
+            </div>
+            <div class="callout-grid reveal" style="margin-bottom: 3rem;">
+                <div class="callout">
+                    <h3>What we check at a scupper</h3>
+                    <p>Debris blocking water flow through the opening. Whether a downstream gutter has clogged and is backing water up toward the scupper. Rust or corrosion, particularly on older or metal-lined scuppers. Cracks or failed sealing where the scupper meets the surrounding roofing material. Coating condition, and whether waterproofing extends far enough into the opening. Whether the scupper sits higher than the surrounding drainage plane. Nearby AC condensation lines or equipment discharging water near or through the scupper. Previous patches nearby that have changed how water reaches it.</p>
+                </div>
+                <div class="callout">
+                    <h3>Why we treat it as its own inspection point</h3>
+                    <p>Any one of these on its own might not cause a visible problem right away. But a scupper combines concentrated water flow, a transition between materials, ongoing debris exposure, and often direct equipment discharge, all in one small area — which is why it gets a close, dedicated look rather than a glance in passing.</p>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="faq-item">
+                    <h3>How can debris contribute to roof leaks?</h3>
+                    <p>Debris isn't just cosmetic. Leaves, branches, seed pods, and similar material collecting near scuppers, drains, transitions, gutters, or rooftop equipment can block drainage, hold moisture against the roofing surface, hide cracks or deterioration underneath it, cause water to back up instead of draining away, and increase how much water sits in one localized area. A drainage point that looks fine when it's clear can behave very differently once debris has partially blocked it.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Why do gutters and scuppers need to be inspected together?</h3>
+                    <p>Where a scupper drains into a gutter, a clogged gutter downstream can back water up toward the scupper itself, and if that backup rises high enough, water can be pushed into areas it was never intended to reach. This is a pattern we've seen directly — a parapet-wall scupper connected to a gutter that had become clogged, which backed water up and let it rise into areas it wasn't designed to travel. That's exactly why we look at a scupper and its downstream gutter as one drainage system, not two separate things to check in isolation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can previous roof repairs create new drainage problems?</h3>
+                    <p>Yes, sometimes — though not always, and a previous repair isn't automatically something to condemn. A patch can solve a localized problem correctly. But a poorly designed one can also redirect water, trap debris, create a raised area that acts as a new obstruction, or interfere with drainage that worked fine before the patch was added. That's why the right question isn't simply "can this be patched again?" — it's "what caused the original problem, and will this repair address that cause without creating a different one?" See <a href="#repair-vs-replacement" class="section-lede-link">Repair vs. Replacement</a> below for how that fits into our broader recommendation process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 05 Flashing & Wall Transitions -->
+    <section id="wall-transitions">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">05 &middot; Flashing &amp; Wall Transitions</span>
+                <h2 class="section-title">When a leak shows up near a wall, the roof field usually isn't the first place we look</h2>
+                <p>If the roof field itself looks fine but there's a leak near a parapet or exterior wall, the investigation typically starts at the most likely drainage points — scuppers and other drainage features — and works upslope and outward from where the leak was reported, rather than starting at the interior stain and looking straight up. As with any leak, the interior location isn't automatically the exact entry point — water can travel along a roof's slope and structure before it shows up inside. See <a href="#leak-diagnosis" class="section-lede-link">Leak Diagnosis</a> above.</p>
+            </div>
+            <div class="callout-grid reveal" style="margin-bottom: 3rem;">
+                <div class="callout">
+                    <h3>What we look at near a wall</h3>
+                    <p>The roof-to-wall transition itself. Base flashing. Counterflashing. The condition of the stucco above the roofline, including cracks. The top of the parapet. Nearby scuppers and how water drains toward that section of wall.</p>
+                </div>
+                <div class="callout">
+                    <h3>Signs worth flagging</h3>
+                    <p>Bubbling or loose stucco, visible cracking (especially at the parapet top or where two materials meet), separation between a transition and the surface around it, water staining that tracks down a wall rather than spreading from a roof-field area, and a flashing detail that looks visibly failed or deteriorated. Any of these can point toward the wall system rather than the roof field — but confirming which one is actually the source still takes a direct inspection.</p>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="faq-item">
+                    <h3>What are base flashing and counterflashing?</h3>
+                    <p>Base flashing is the material installed where the roof meets a vertical wall, forming the first waterproofing layer at that transition. Counterflashing sits above and overlaps the base flashing, typically anchored into the wall itself, and its job is to shed water down and over the base flashing rather than letting it get behind it. Together they're meant to work as a system: water hits the wall, is directed onto the counterflashing, sheds down over the base flashing, and continues onto the roof surface. Exact terminology and construction can vary by roofing system and by how a specific wall was built.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Why can stucco and wall transitions contribute to roof leaks?</h3>
+                    <p>A roof-to-wall transition brings together more materials and more potential failure points than the open roof field does — the roofing material itself, base flashing, counterflashing, and the wall's own stucco or finish. Cracked or deteriorated stucco above the roofline can let water behind the flashing system entirely, bypassing the roof's waterproofing altogether. That's part of why a wall-adjacent leak often needs a different kind of inspection than one in the middle of an open roof.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What should be inspected around parapet walls?</h3>
+                    <p>Coping or cap condition at the top of the parapet, the roof-to-wall transition and its flashing, stucco condition on the parapet face, sealant joints, drainage at and near any scuppers, and whether prior patches nearby have changed how water reaches those features. Our <a href="parapet-roofing.html">Parapet Roofing &amp; Repairs</a> page covers our repair process for this area in more depth.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Why are parapet caps sometimes a better long-term solution?</h3>
+                    <p>A parapet cap covers and protects the top of the parapet wall — one of the more exposed, weather-beaten parts of a flat-roof building — which can reduce how much water reaches the wall assembly in the first place, rather than relying on repeated resealing or recoating of an exposed stucco or masonry top. That can make it a strong long-term option in the right situation. It isn't automatically the best solution for every building, though — HOA rules, the building's design and aesthetics, existing construction, and the overall project scope can all affect whether a cap is the right fit, and we wouldn't recommend one without evaluating your specific parapet first.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 06 Rooftop Equipment -->
+    <section id="rooftop-equipment">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">06 &middot; Rooftop Equipment</span>
+                <h2 class="section-title">Skylights, solar, HVAC, and everything else on the roof</h2>
+                <p>Anything mounted on, penetrating, or discharging onto a roof affects how that roof drains and how easily it can be maintained. We evaluate the roofing around this equipment; the equipment itself is often outside a roofing contractor's scope.</p>
+            </div>
+            <div class="reveal">
+                <div class="faq-item">
+                    <h3>My skylight is leaking — should the area just be sealed with more caulk?</h3>
+                    <p>Not automatically. A skylight has multiple components and its own drainage paths, and a leak can originate from the glazing, the flashing, the curb transition, or a failed seal — sealing over everything can end up blocking a weep path the skylight actually needs, creating a new problem instead of solving the original one.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What should be inspected around roof penetrations?</h3>
+                    <p>Pipe boots and plumbing vents, the flashing or collar around each penetration, sealant condition, and whether the surrounding roofing material is still adhered and intact right up to the penetration. Penetrations are one of the more common places for a small gap to develop over time, simply because they interrupt an otherwise continuous roofing surface.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do solar panels need to be removed before roofing work?</h3>
+                    <p>It depends on the roofing system, the scope of work, access, the panel configuration, and manufacturer requirements — there's no single answer that applies to every install, and solar equipment can meaningfully complicate both the scope and sequencing of a roofing project. We evaluate roofing work around existing solar equipment, but we don't perform electrical or solar work ourselves. Where panels need to come off and go back on, that requires coordinating with a qualified, licensed solar provider.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Why can rooftop cables become a leak risk?</h3>
+                    <p>Cables and wires laid directly across a roofing surface can shift in the wind, get stepped on during maintenance, trap debris underneath them, and make it harder to properly inspect the roofing surface they're covering. We don't recommend coating cables directly into the roofing system as a general practice, since that can trap them in place and make future roof or cable maintenance more difficult. That said, we don't move, cut, disconnect, or otherwise alter electrical or communications cables ourselves — any live electrical equipment needs to be handled by a qualified professional, and we'll coordinate with the appropriate provider rather than working around it ourselves.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do condensation lines affect a roof?</h3>
+                    <p>A condensation line or similar rooftop discharge point creates concentrated water exposure in one specific spot, and repeated discharge in the same location over time can accelerate wear there — it's worth evaluating as part of the overall roofing system, not treated as separate from it. We're not making a claim that all condensate, or all municipal water, damages every roofing product at some fixed rate; that depends on the roofing system and the specific discharge point. The practical point is simpler: a line that's been dripping in the same spot for a long time deserves a look during leak diagnosis and routine maintenance, like any other rooftop feature.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 07 Repair vs. Replacement -->
+    <section id="repair-vs-replacement">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">07 &middot; Repair vs. Replacement</span>
+                <h2 class="section-title">How we decide, and when a repair stops being the right call</h2>
+                <p>Most roof problems don't require full replacement, and we don't default to recommending one. But there's a point where continuing to recommend surface-level repairs stops being the responsible thing to do — this section is about where that line actually sits.</p>
+            </div>
+            <div class="reveal">
+                <div class="faq-item">
+                    <h3>How do you decide between roof repair and replacement?</h3>
+                    <p>The goal of an estimate isn't to sell the biggest job possible — it's to properly evaluate the roof's condition and translate that diagnosis into the scope of work that actually makes sense for it. A smaller repair can be entirely appropriate when it addresses the actual problem and can reasonably be expected to perform. What actually factors into the recommendation: age of the roofing system, its overall condition beyond just the visible problem area, how many previous repairs already exist and whether they're still functioning, deck condition, drainage, the extent of any deterioration, whether existing materials are still compatible with additional repair work, and cost-effectiveness of repair versus replacement over time. We aim to explain what was found, what wasn't found, and what the limitations of a proposed repair are — not just hand you a number.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>When does a repair stop being the responsible recommendation?</h3>
+                    <p>Visible or significant deflection in the roof deck is one of the clearest signs. To be direct about what that does and doesn't mean: significant deck deflection can indicate a structural or substrate concern and may require further evaluation before additional roofing material is added — that's a different statement than saying a roof "will collapse," which isn't a conclusion a roofing contractor is positioned to make. Other signs include a pattern of repeated repairs in the same area that keep failing, deterioration that extends well beyond the specific spot being patched, a substrate no longer compatible with additional repair work, and drainage problems that a repair keeps failing to resolve because the underlying cause was never addressed. None of these automatically mean full replacement — they mean the conversation needs to be more thorough than another patch, and if that's what an inspection finds, we'll say so directly rather than propose a repair we don't expect to hold.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What happens if a roof has multiple previous roofing systems?</h3>
+                    <p>Multiple layers or systems stacked over time can complicate both diagnosis and repair — each layer can hide what's beneath it, and materials from different systems aren't always compatible with each other or with a new repair. What that means for your roof specifically depends on what's actually there, which is something we'd confirm during an inspection rather than assume from the number of layers alone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+        <div class="container cta-band-inner">
+            <h2>If You're Dealing With a Roof Problem</h2>
+            <p>If you're seeing something on your roof and want a clear explanation of what we find — not a sales pitch — request an inspection. We'll walk you through what we see and why.</p>
+            <div class="cta-actions">
+                <a href="index.html#contact" class="btn btn-primary">Request Free Estimate</a>
+                <a href="tel:15205541292" class="btn-call">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                    Call or Text (520) 554-1292
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer — identical to homepage -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="brand-name">Sambrano Roofing &amp; Exterior LLC</span>
+                    <p>Licensed, bonded, and insured roofing contractor serving Tucson and Southern Arizona. Owned and operated by Jose Erick Sambrano Torres.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="roof-coatings.html">Roof Coatings</a></li>
+                        <li><a href="modified-bitumen-roofing.html">Modified Bitumen / Flat Roofing</a></li>
+                        <li><a href="tile-roofing.html">Tile Roofing</a></li>
+                        <li><a href="tile-underlayment.html">Tile Underlayment</a></li>
+                        <li><a href="shingle-roofing.html">Shingle Roofing</a></li>
+                        <li><a href="parapet-roofing.html">Parapet Roofing &amp; Repairs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="roofing-knowledge-center.html">Roofing Knowledge Center</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#areas">Service Areas</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:15205541292">(520) 554-1292</a></li>
+                        <li><a href="mailto:info@sambranoroofing.com">info@sambranoroofing.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="padding-top: 2rem; margin-top: 1rem; border-top: 1px solid var(--border-color);">
+                <h4 style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--white); margin-bottom: 0.85rem;">Arizona Contractor Information</h4>
+                <p style="font-size: 0.85rem; color: #94A3B8; max-width: 640px;">Sambrano Roofing &amp; Exterior LLC &mdash; ROC #367370 | CR-42 Roofing</p>
+                <p style="font-size: 0.85rem; color: #94A3B8; max-width: 640px; margin-top: 0.6rem;">NOTICE: The property owner has the right to file a written complaint with the Arizona Registrar of Contractors for an alleged violation of A.R.S. &sect; 32-1154(A).</p>
+                <p style="font-size: 0.85rem; color: #94A3B8; max-width: 640px; margin-top: 0.6rem;">Customers have the right to file a written complaint with the Arizona Registrar of Contractors regarding an alleged violation of Arizona law.</p>
+                <p style="font-size: 0.85rem; margin-top: 0.75rem;">
+                    <a href="https://roc.az.gov/contractor-search" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: underline;">Verify Our ROC License</a>
+                    &nbsp;&middot;&nbsp;
+                    <a href="https://roc.az.gov/complaint-process-legal" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: underline;">ROC Complaint Information</a>
+                </p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sambrano Roofing &amp; Exterior LLC. All rights reserved.</p>
+                <p class="footer-license">Licensed, Bonded &amp; Insured &middot; ROC #367370</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('click', function (e) {
+            const nav = document.querySelector('.nav-links');
+            const toggle = document.querySelector('.nav-toggle');
+            if (nav && nav.classList.contains('mobile-open') && !nav.contains(e.target) && !toggle.contains(e.target)) {
+                nav.classList.remove('mobile-open');
+            }
+        });
+
+        (function () {
+            var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (!reduceMotion && 'IntersectionObserver' in window) {
+                var revealItems = document.querySelectorAll('.reveal');
+                var observer = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+                revealItems.forEach(function (el) { observer.observe(el); });
+            } else {
+                document.querySelectorAll('.reveal').forEach(function (el) {
+                    el.classList.add('is-visible');
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
