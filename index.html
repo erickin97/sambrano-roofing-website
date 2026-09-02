@@ -336,6 +336,42 @@
             flex-wrap: wrap;
         }
 
+        .hero-trust {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+            margin-top: 2.25rem;
+        }
+
+        .hero-trust span {
+            position: relative;
+            font-size: 0.78rem;
+            letter-spacing: 0.02em;
+            color: #B8C2CE;
+            text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+            padding-left: 1.15rem;
+        }
+
+        .hero-trust span::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--accent-gold);
+        }
+
+        .hero-trust span:first-child {
+            padding-left: 0;
+        }
+
+        .hero-trust span:first-child::before {
+            display: none;
+        }
+
         .btn-call {
             display: inline-flex;
             align-items: center;
@@ -475,6 +511,14 @@
         .service-card p {
             font-size: 0.9rem;
         }
+
+        /* Real Roofing Work strip */
+        .photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+        .photo-card { border-radius: 4px; overflow: hidden; border: 1px solid var(--border-color); background-color: var(--charcoal-muted); display: block; color: inherit; transition: var(--transition); }
+        .photo-card:hover { border-color: rgba(255, 255, 255, 0.15); transform: translateY(-4px); }
+        .photo-card img { width: 100%; height: 260px; object-fit: cover; display: block; }
+        .photo-caption { padding: 1rem 1.25rem; font-size: 0.95rem; font-family: var(--font-heading); font-weight: 600; color: var(--white); display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+        .photo-caption .arrow { color: var(--accent-gold); font-weight: 400; }
 
         /* Projects Section */
         .projects-grid {
@@ -1231,6 +1275,13 @@
                 text-align: center;
                 justify-content: center;
             }
+
+            .hero-trust {
+                margin-top: 1.5rem;
+                gap: 0.5rem 1rem;
+                justify-content: center;
+                text-align: center;
+            }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -1340,10 +1391,10 @@
         <div class="container">
             <div class="hero-content" id="hero-content">
                 <img class="hero-logo-badge logo-mark" src="assets/logo/logo-white.png" alt="SR Roofing logo">
-                <h1>Protecting Tucson Homes with Expert Roofing Solutions</h1>
-                <p>Tucson-owned and operated by Jose Erick Sambrano Torres. From tile lift &amp; reset to roof coatings and full shingle roof systems, we protect Tucson-area homes and businesses through monsoon season and everything after.</p>
+                <h1>Understand the Problem. Then Decide.</h1>
+                <p>Sambrano Roofing &amp; Exterior LLC is family-owned and operated by Erick Sambrano, raised right here in Tucson. Before we recommend a repair or a replacement, we take the time to understand what's actually happening on your roof &mdash; so you can decide with real information, not just an estimate.</p>
                 <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+                    <a href="#contact" class="btn btn-primary">Request a Free Roof Inspection</a>
                     <a href="#projects" class="btn btn-secondary">View Our Projects</a>
                     <a href="tel:15205541292" class="btn-call">
                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
@@ -1353,6 +1404,12 @@
                         <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
                         Email Us
                     </a>
+                </div>
+                <div class="hero-trust">
+                    <span>Family-Owned &amp; Operated</span>
+                    <span>Raised in Tucson</span>
+                    <span>Licensed, Bonded &amp; Insured</span>
+                    <span>ROC #367370 &middot; CR-42 Roofing</span>
                 </div>
             </div>
         </div>
@@ -1366,6 +1423,7 @@
                 <h2 class="section-title">Licensed, local, and built for desert roofs.</h2>
                 <p>Sambrano Roofing &amp; Exterior LLC is owned and operated by Jose Erick Sambrano Torres, working on tile, shingle, and flat roofs across Tucson and Southern Arizona. We know how the desert heat, UV exposure, and monsoon storms wear down a roof &mdash; and we build our repairs and installs around that reality.</p>
                 <p style="margin-top: 1.25rem;">Every job is backed by licensed, bonded, and insured work, with free estimates on every project.</p>
+                <p style="margin-top: 1.25rem;">Want to understand what's actually happening on your roof before you call anyone? Visit our <a href="roofing-knowledge-center.html" style="color: var(--accent-gold); text-decoration: underline;">Roofing Knowledge Center</a>.</p>
                 <!-- Verified official Arizona Registrar of Contractors search URL,
                      provided by Erick. -->
                 <p style="margin-top: 1.25rem;">
@@ -1468,6 +1526,30 @@
         </div>
     </section>
 
+    <!-- Real Roofing Work: helps homeowners visually recognize their roof type -->
+    <section id="roof-types">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-badge">Real Work, Real Roofs</span>
+                <h2 class="section-title">See the roofing systems we work on</h2>
+            </div>
+            <div class="photo-grid reveal">
+                <a class="photo-card" href="roof-coatings.html">
+                    <img src="assets/images/projects-2026/fresh-elastomeric-roof-coating-blue-sky.jpg" loading="lazy" decoding="async" width="1280" height="960" alt="Fresh elastomeric-style roof coating under clear Tucson skies">
+                    <p class="photo-caption">Roof Coatings <span class="arrow">&rarr;</span></p>
+                </a>
+                <a class="photo-card" href="modified-bitumen-roofing.html">
+                    <img src="assets/images/projects/modified-bitumen-granulated-cap-sheet.jpg" loading="lazy" decoding="async" width="1100" height="825" alt="Granulated modified-bitumen cap-sheet roofing system installed on a low-slope roof">
+                    <p class="photo-caption">Modified Bitumen / Flat Roofing <span class="arrow">&rarr;</span></p>
+                </a>
+                <a class="photo-card" href="parapet-roofing.html">
+                    <img src="assets/images/projects-2026/completed-parapet-cap-coating-detail.jpg" loading="lazy" decoding="async" width="1280" height="960" alt="Finished parapet cap edge with roof coating">
+                    <p class="photo-caption">Parapet Repair <span class="arrow">&rarr;</span></p>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects -->
     <section id="projects">
         <div class="container">
@@ -1516,6 +1598,34 @@
                     <div class="project-meta">
                         <div class="project-category">Shingle &amp; Coating</div>
                         <div class="project-title">Shingle Roof + Flat Roof Coating</div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-project="7" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project gallery: Completed Flat Roof Coating, Parapet-Wall Property">
+                    <img class="project-img" src="assets/images/projects-2026/tucson-roof-coating-parapet-wall-flat-roof.jpg" width="1280" height="960" loading="lazy" decoding="async" alt="Completed flat roof coating framed by parapet walls">
+                    <div class="project-meta">
+                        <div class="project-category">Roof Coating</div>
+                        <div class="project-title">Completed Flat Roof Coating, Parapet-Wall Property</div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-project="8" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project gallery: Coating Materials on the Jobsite">
+                    <img class="project-img" src="assets/images/projects-2026/tucson-rubberized-coatings-perma-coat-product.jpg" width="1280" height="960" loading="lazy" decoding="async" alt="Tucson Rubberized Coatings Perma-Coat product used during application">
+                    <div class="project-meta">
+                        <div class="project-category">Roof Coating</div>
+                        <div class="project-title">Coating Materials on the Jobsite</div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-project="9" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project gallery: Completed Tan Roof Coating">
+                    <img class="project-img" src="assets/images/projects-2026/tucson-roof-coating-tan-finish-parapet.jpg" width="1280" height="960" loading="lazy" decoding="async" alt="Completed tan roof coating along a parapet wall">
+                    <div class="project-meta">
+                        <div class="project-category">Roof Coating</div>
+                        <div class="project-title">Completed Tan Roof Coating</div>
+                    </div>
+                </div>
+                <div class="project-card reveal" data-project="10" role="button" tabindex="0" aria-haspopup="dialog" aria-label="View project gallery: Tan Parapet Edge, Roof Coating Detail">
+                    <img class="project-img" src="assets/images/projects-2026/tan-parapet-edge-roof-coating-view.jpg" width="1280" height="960" loading="lazy" decoding="async" alt="Tan parapet edge, roof coating detail">
+                    <div class="project-meta">
+                        <div class="project-category">Parapet Repair</div>
+                        <div class="project-title">Tan Parapet Edge, Roof Coating Detail</div>
                     </div>
                 </div>
             </div>
@@ -1718,7 +1828,7 @@
                     <label for="message">Project Details</label>
                     <textarea id="message" name="message" rows="4" placeholder="Tell us about your roof or the issue you're seeing"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Request Free Estimate</button>
+                <button type="submit" class="btn btn-primary">Request a Free Roof Inspection</button>
                 <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.85rem; text-align: center;">By submitting this form, you agree to our <a href="privacy-policy.html" style="color: var(--accent-gold); text-decoration: underline;">Privacy Policy</a> and <a href="terms-conditions.html" style="color: var(--accent-gold); text-decoration: underline;">Terms &amp; Conditions</a>.</p>
             </form>
         </div>
@@ -1746,6 +1856,7 @@
                 <div class="footer-col">
                     <h4>Company</h4>
                     <ul>
+                        <li><a href="roofing-knowledge-center.html">Roofing Knowledge Center</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#areas">Service Areas</a></li>
@@ -1956,6 +2067,46 @@
                     city: '',
                     description: 'Shingle roofline alongside a freshly coated adjacent flat roof section.',
                     cover: 'assets/images/projects/project-6.jpg',
+                    gallery: [],
+                    before: '',
+                    after: ''
+                },
+                '7': {
+                    category: 'Roof Coating',
+                    title: 'Completed Flat Roof Coating, Parapet-Wall Property',
+                    city: '',
+                    description: 'Finished flat roof coating on a property with stepped parapet walls.',
+                    cover: 'assets/images/projects-2026/tucson-roof-coating-parapet-wall-flat-roof.jpg',
+                    gallery: [],
+                    before: '',
+                    after: ''
+                },
+                '8': {
+                    category: 'Roof Coating',
+                    title: 'Coating Materials on the Jobsite',
+                    city: '',
+                    description: 'Tucson Rubberized Coatings Perma-Coat product staged during a coating application.',
+                    cover: 'assets/images/projects-2026/tucson-rubberized-coatings-perma-coat-product.jpg',
+                    gallery: [],
+                    before: '',
+                    after: ''
+                },
+                '9': {
+                    category: 'Roof Coating',
+                    title: 'Completed Tan Roof Coating',
+                    city: '',
+                    description: 'Finished tan-colored roof coating along a parapet wall.',
+                    cover: 'assets/images/projects-2026/tucson-roof-coating-tan-finish-parapet.jpg',
+                    gallery: [],
+                    before: '',
+                    after: ''
+                },
+                '10': {
+                    category: 'Parapet Repair',
+                    title: 'Tan Parapet Edge, Roof Coating Detail',
+                    city: '',
+                    description: 'Close detail of a finished parapet edge and adjacent roof coating.',
+                    cover: 'assets/images/projects-2026/tan-parapet-edge-roof-coating-view.jpg',
                     gallery: [],
                     before: '',
                     after: ''
