@@ -480,6 +480,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
+            align-items: start;
         }
 
         .service-card {
@@ -510,6 +511,29 @@
 
         .service-card p {
             font-size: 0.9rem;
+        }
+
+        /* Service cards with a representative photo */
+        .service-card.has-image {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .service-card-media {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .service-card-media img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .service-card-body {
+            padding: 1.75rem 2rem 2rem;
         }
 
         /* Real Roofing Work strip */
@@ -1462,45 +1486,75 @@
                 <h2 class="section-title">Roofing &amp; exterior systems built for the desert</h2>
             </div>
             <div class="services-grid">
-                <div class="service-card reveal">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l9 4 9-4M3 6v12l9 4 9-4V6M3 6l9-4 9 4"/></svg>
-                    <h3>Roof Coatings</h3>
-                    <p>Elastomeric coating systems for flat and low-slope roofs, reflecting heat and sealing against monsoon rain.</p>
-                    <a href="roof-coatings.html" style="display: inline-block; margin-top: 1rem; font-size: 0.85rem; color: var(--accent-gold); text-decoration: underline;">Learn More &rarr;</a>
+                <div class="service-card has-image reveal">
+                    <div class="service-card-media">
+                        <img src="assets/images/services/roof-coatings-service.jpg" loading="lazy" decoding="async" width="1280" height="853" alt="Applying roof coating with a roller to a flat roof">
+                    </div>
+                    <div class="service-card-body">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l9 4 9-4M3 6v12l9 4 9-4V6M3 6l9-4 9 4"/></svg>
+                        <h3>Roof Coatings</h3>
+                        <p>Elastomeric coating systems for flat and low-slope roofs, reflecting heat and sealing against monsoon rain.</p>
+                        <a href="roof-coatings.html" style="display: inline-block; margin-top: 1rem; font-size: 0.85rem; color: var(--accent-gold); text-decoration: underline;">Learn More &rarr;</a>
+                    </div>
                 </div>
-                <div class="service-card reveal">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="10" rx="1"/><path d="M3 8l4-4h10l4 4M8 12h.01M12 12h.01M16 12h.01"/></svg>
-                    <h3>Modified Bitumen / Flat Roofing</h3>
-                    <p>Modified-bitumen membrane systems for low-slope roofs &mdash; a different approach from a liquid-applied coating.</p>
-                    <a href="modified-bitumen-roofing.html" style="display: inline-block; margin-top: 1rem; font-size: 0.85rem; color: var(--accent-gold); text-decoration: underline;">Learn More &rarr;</a>
+                <div class="service-card has-image reveal">
+                    <div class="service-card-media">
+                        <img src="assets/images/services/modified-bitumen-flat-roofing-service.jpg" loading="lazy" decoding="async" width="1280" height="853" alt="Torch-applying a modified bitumen roofing membrane">
+                    </div>
+                    <div class="service-card-body">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="10" rx="1"/><path d="M3 8l4-4h10l4 4M8 12h.01M12 12h.01M16 12h.01"/></svg>
+                        <h3>Modified Bitumen / Flat Roofing</h3>
+                        <p>Modified-bitumen membrane systems for low-slope roofs &mdash; a different approach from a liquid-applied coating.</p>
+                        <a href="modified-bitumen-roofing.html" style="display: inline-block; margin-top: 1rem; font-size: 0.85rem; color: var(--accent-gold); text-decoration: underline;">Learn More &rarr;</a>
+                    </div>
                 </div>
-                <div class="service-card reveal">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-                    <h3>Shingle Roofing</h3>
-                    <p>Full shingle roof installations and replacements, built for Tucson's sun and storms.</p>
-                    <a href="shingle-roofing.html" style="display: inline-block; margin-top: 1rem; font-size: 0.85rem; color: var(--accent-gold); text-decoration: underline;">Learn More &rarr;</a>
+                <div class="service-card has-image reveal">
+                    <div class="service-card-media">
+                        <img src="assets/images/services/shingle-roofing-service.jpg" loading="lazy" decoding="async" width="1280" height="853" alt="Installing asphalt shingles with a nail gun">
+                    </div>
+                    <div class="service-card-body">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+                        <h3>Shingle Roofing</h3>
+                        <p>Full shingle roof installations and replacements, built for Tucson's sun and storms.</p>
+                        <a href="shingle-roofing.html" style="display: inline-block; margin-top: 1rem; font-size: 0.85rem; color: var(--accent-gold); text-decoration: underline;">Learn More &rarr;</a>
+                    </div>
                 </div>
-                <div class="service-card reveal">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h4v-6h4v6h4a1 1 0 001-1V10"/></svg>
-                    <h3>Tile Lift &amp; Reset</h3>
-                    <p>We lift existing tile, replace the underlayment, and reset the original tile so your roofline keeps its look with a fresh waterproof base.</p>
-                    <a href="tile-roofing.html" style="display: inline-block; margin-top: 1rem; font-size: 0.85rem; color: var(--accent-gold); text-decoration: underline;">Learn More &rarr;</a>
+                <div class="service-card has-image reveal">
+                    <div class="service-card-media">
+                        <img src="assets/images/services/tile-lift-reset-service.jpg" loading="lazy" decoding="async" width="1280" height="853" alt="Resetting clay roof tile over new underlayment">
+                    </div>
+                    <div class="service-card-body">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l9-9 9 9M5 10v10a1 1 0 001 1h4v-6h4v6h4a1 1 0 001-1V10"/></svg>
+                        <h3>Tile Lift &amp; Reset</h3>
+                        <p>We lift existing tile, replace the underlayment, and reset the original tile so your roofline keeps its look with a fresh waterproof base.</p>
+                        <a href="tile-roofing.html" style="display: inline-block; margin-top: 1rem; font-size: 0.85rem; color: var(--accent-gold); text-decoration: underline;">Learn More &rarr;</a>
+                    </div>
                 </div>
                 <div class="service-card reveal">
                     <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.5 7h7.5l-6 4.5 2.5 7-6-4.5-6 4.5 2.5-7-6-4.5h7.5z"/></svg>
                     <h3>Roof Repairs</h3>
                     <p>Leak detection and targeted fixes for tile, shingle, and flat roofs.</p>
                 </div>
-                <div class="service-card reveal">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="1"/><path d="M4 10l8-6 8 6"/></svg>
-                    <h3>Parapet Repair</h3>
-                    <p>Repair and resealing of parapet walls on flat and commercial roof systems.</p>
-                    <a href="parapet-roofing.html" style="display: inline-block; margin-top: 1rem; font-size: 0.85rem; color: var(--accent-gold); text-decoration: underline;">Learn More &rarr;</a>
+                <div class="service-card has-image reveal">
+                    <div class="service-card-media">
+                        <img src="assets/images/services/parapet-repair-service.jpg" loading="lazy" decoding="async" width="1280" height="853" alt="Patching and repairing a parapet wall on a flat roof">
+                    </div>
+                    <div class="service-card-body">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="10" rx="1"/><path d="M4 10l8-6 8 6"/></svg>
+                        <h3>Parapet Repair</h3>
+                        <p>Repair and resealing of parapet walls on flat and commercial roof systems.</p>
+                        <a href="parapet-roofing.html" style="display: inline-block; margin-top: 1rem; font-size: 0.85rem; color: var(--accent-gold); text-decoration: underline;">Learn More &rarr;</a>
+                    </div>
                 </div>
-                <div class="service-card reveal">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10l8-6 8 6v10M9 20v-6h6v6"/></svg>
-                    <h3>Fascia &amp; Wood Replacement</h3>
-                    <p>Replacing rotted or damaged fascia and trim to keep water out and your roofline looking sharp.</p>
+                <div class="service-card has-image reveal">
+                    <div class="service-card-media">
+                        <img src="assets/images/services/fascia-wood-replacement-service.jpg" loading="lazy" decoding="async" width="1280" height="853" alt="Installing new fascia board under a tile roof eave">
+                    </div>
+                    <div class="service-card-body">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10l8-6 8 6v10M9 20v-6h6v6"/></svg>
+                        <h3>Fascia &amp; Wood Replacement</h3>
+                        <p>Replacing rotted or damaged fascia and trim to keep water out and your roofline looking sharp.</p>
+                    </div>
                 </div>
                 <div class="service-card reveal">
                     <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
@@ -1512,15 +1566,25 @@
                     <h3>Leak Repairs</h3>
                     <p>Finding and fixing the source of a leak &mdash; not just patching where the water shows up inside.</p>
                 </div>
-                <div class="service-card reveal">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 12a9.5 9.5 0 11-2.8-6.7M21.5 4v5h-5"/></svg>
-                    <h3>Yearly Roof Maintenance</h3>
-                    <p>Seasonal check-ups to catch small issues before Tucson's monsoon season turns them into big ones.</p>
+                <div class="service-card has-image reveal">
+                    <div class="service-card-media">
+                        <img src="assets/images/services/yearly-roof-maintenance-service.jpg" loading="lazy" decoding="async" width="1280" height="853" alt="Clearing debris from a roof drain during maintenance">
+                    </div>
+                    <div class="service-card-body">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 12a9.5 9.5 0 11-2.8-6.7M21.5 4v5h-5"/></svg>
+                        <h3>Yearly Roof Maintenance</h3>
+                        <p>Seasonal check-ups to catch small issues before Tucson's monsoon season turns them into big ones.</p>
+                    </div>
                 </div>
-                <div class="service-card reveal">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M4 20L20 4" opacity="0"/><path d="M6 4h12l-1 12a3 3 0 01-3 3H10a3 3 0 01-3-3L6 4z"/></svg>
-                    <h3>Gutter Cleaning</h3>
-                    <p>Clearing gutters and downspouts so rainwater moves away from your roof and foundation like it should.</p>
+                <div class="service-card has-image reveal">
+                    <div class="service-card-media">
+                        <img src="assets/images/services/gutter-cleaning-service.jpg" loading="lazy" decoding="async" width="1280" height="853" alt="Clearing leaves and debris from a roof gutter">
+                    </div>
+                    <div class="service-card-body">
+                        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16M4 20L20 4" opacity="0"/><path d="M6 4h12l-1 12a3 3 0 01-3 3H10a3 3 0 01-3-3L6 4z"/></svg>
+                        <h3>Gutter Cleaning</h3>
+                        <p>Clearing gutters and downspouts so rainwater moves away from your roof and foundation like it should.</p>
+                    </div>
                 </div>
             </div>
         </div>
