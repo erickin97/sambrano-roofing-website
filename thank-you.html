@@ -6,7 +6,8 @@
     <title>Request Received | Sambrano Roofing & Exterior LLC</title>
     <meta name="description" content="Your free roofing estimate request has been received by Sambrano Roofing & Exterior LLC.">
     <link rel="canonical" href="https://sambranoroofing.com/thank-you.html">
-    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <link rel="icon" type="image/png" href="assets/logo/favicon-new.png">
+    <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
     <meta name="robots" content="noindex, follow">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,25 +17,25 @@
     <style>
         :root {
             --white: #FFFFFF;
-            --charcoal: #12161A;
-            --charcoal-muted: #1A1F26;
-            --deep-blue: #0A192F;
-            --accent-gold: #C9A227;
-            --accent-gold-hover: #AD8A20;
+            --charcoal: #111111;
+            --charcoal-muted: #F5F5F5;
+            --deep-blue: #2B2B2B;
+            --accent-gold: #F7941D;
+            --accent-gold-hover: #CA7917;
             --text-light: #F4F5F6;
-            --text-dark: #12161A;
-            --text-muted: #64748B;
-            --border-color: #2A3342;
+            --text-dark: #111111;
+            --text-muted: #5A5A5A;
+            --border-color: #E0E0E0;
             --font-sans: 'Inter', sans-serif;
             --font-heading: 'Lexend Deca', sans-serif;
             --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        html { scroll-behavior: smooth; font-size: 16px; background-color: var(--charcoal); color: var(--text-light); }
+        html { scroll-behavior: smooth; font-size: 16px; background-color: var(--white); color: var(--text-dark); }
         body { font-family: var(--font-sans); line-height: 1.6; overflow-x: hidden; }
         h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
-        p { font-weight: 300; color: #94A3B8; }
+        p { font-weight: 300; color: var(--text-muted); }
         a { text-decoration: none; color: var(--accent-gold); transition: var(--transition); }
         a:hover { color: var(--accent-gold-hover); text-decoration: underline; }
 
@@ -46,34 +47,36 @@
         .btn-primary:hover { background-color: var(--accent-gold-hover); transform: translateY(-2px); text-decoration: none; }
         .btn-secondary { background-color: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.2); backdrop-filter: blur(8px); }
         .btn-secondary:hover { border-color: var(--white); background-color: rgba(255,255,255,0.05); transform: translateY(-2px); text-decoration: none; }
-        .btn-call { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 1.5rem; font-size: 0.85rem; font-weight: 500; color: #CBD5E1; border: 1px solid rgba(255,255,255,0.12); border-radius: 4px; background: transparent; transition: var(--transition); }
+        .nav-actions .btn-secondary { color: var(--text-dark); border-color: rgba(0, 0, 0, 0.15); }
+        .nav-actions .btn-secondary:hover { border-color: var(--text-dark); background-color: rgba(0, 0, 0, 0.04); }
+        .btn-call { display: inline-flex; align-items: center; gap: 0.5rem; padding: 1rem 1.5rem; font-size: 0.85rem; font-weight: 500; color: var(--text-dark); border: 1px solid rgba(0,0,0,0.15); border-radius: 4px; background: transparent; transition: var(--transition); }
         .btn-call svg { width: 16px; height: 16px; stroke: var(--accent-gold); flex-shrink: 0; }
         .btn-call:hover { color: var(--white); border-color: var(--accent-gold-hover); transform: translateY(-2px); text-decoration: none; }
 
-        .nav-bar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background-color: rgba(18,22,26,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.05); transition: var(--transition); }
+        .nav-bar { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background-color: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(0,0,0,0.08); transition: var(--transition); }
         .nav-container { display: flex; align-items: center; justify-content: space-between; height: 90px; }
         .brand-logo { display: flex; align-items: center; gap: 0.85rem; }
         .brand-logo img { height: 56px; width: auto; flex-shrink: 0; }
-        .logo-mark { content: url("assets/logo/logo-white.png"); }
-        .theme-light .logo-mark { content: url("assets/logo/logo-color.png"); }
+        .logo-mark { content: url("assets/logo/sambrano-logo.png"); }
+        .theme-light .logo-mark { content: url("assets/logo/sambrano-logo.png"); }
         .brand-text { display: flex; flex-direction: column; }
-        .brand-name { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: var(--white); letter-spacing: -0.01em; }
+        .brand-name { font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: var(--text-dark); letter-spacing: -0.01em; }
         .brand-sub { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--text-muted); margin-top: 2px; }
         .nav-links { display: flex; gap: 2.5rem; list-style: none; }
-        .nav-link { font-size: 0.85rem; font-weight: 400; color: #94A3B8; }
-        .nav-link:hover { color: var(--white); text-decoration: none; }
+        .nav-link { font-size: 0.85rem; font-weight: 400; color: var(--text-dark); }
+        .nav-link:hover { color: var(--accent-gold); text-decoration: none; }
         .nav-actions { display: flex; align-items: center; gap: 1.5rem; }
         .nav-toggle { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; }
-        .nav-toggle span { width: 22px; height: 2px; background-color: var(--white); transition: var(--transition); }
+        .nav-toggle span { width: 22px; height: 2px; background-color: var(--text-dark); transition: var(--transition); }
 
-        .trust-bar { margin-top: 90px; background-color: var(--charcoal-muted); border-bottom: 1px solid var(--border-color); padding: 0.65rem 0; }
+        .trust-bar { margin-top: 90px; background-color: var(--white); border-bottom: 1px solid var(--border-color); padding: 0.65rem 0; }
         .trust-bar .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.35rem 1.5rem; }
         .trust-bar p { margin: 0; font-size: 0.78rem; }
 
         .confirm-wrap { max-width: 640px; margin: 0 auto; text-align: center; }
         .confirm-icon { width: 64px; height: 64px; border-radius: 50%; background-color: var(--charcoal-muted); border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; }
         .confirm-icon svg { width: 28px; height: 28px; stroke: var(--accent-gold); }
-        .confirm-wrap h1 { font-size: 2.25rem; color: var(--white); margin-bottom: 1.25rem; }
+        .confirm-wrap h1 { font-size: 2.25rem; color: var(--text-dark); margin-bottom: 1.25rem; }
         .confirm-wrap p { font-size: 1.05rem; margin-bottom: 1.25rem; }
         .confirm-actions { display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 2rem; }
 
@@ -103,7 +106,7 @@
             .footer-grid { grid-template-columns: 1fr 1fr; }
             .nav-links, .nav-actions .btn-secondary, .nav-actions .btn-primary { display: none; }
             .nav-toggle { display: flex; }
-            .nav-links.mobile-open { display: flex; flex-direction: column; position: absolute; top: 90px; left: 0; width: 100%; background-color: rgba(18,22,26,0.98); padding: 1.5rem 2rem; gap: 1.25rem; border-bottom: 1px solid var(--border-color); }
+            .nav-links.mobile-open { display: flex; flex-direction: column; position: absolute; top: 90px; left: 0; width: 100%; background-color: rgba(255,255,255,0.98); padding: 1.5rem 2rem; gap: 1.25rem; border-bottom: 1px solid var(--border-color); }
             section { padding: 3.5rem 0; }
             .confirm-wrap h1 { font-size: 1.85rem; }
         }
@@ -123,7 +126,7 @@
     <nav class="nav-bar">
         <div class="container nav-container">
             <a href="index.html" class="brand-logo">
-                <img class="logo-mark" src="assets/logo/logo-white.png" width="500" height="516" alt="SR Roofing logo">
+                <img class="logo-mark" src="assets/logo/sambrano-logo.png" width="1200" height="844" alt="Sambrano Roofing & Exterior LLC logo">
                 <span class="brand-text">
                     <span class="brand-name">Sambrano Roofing</span>
                     <span class="brand-sub">&amp; Exterior LLC</span>
@@ -148,7 +151,7 @@
 
     <div class="trust-bar">
         <div class="container">
-            <p style="letter-spacing: 0.05em; color: var(--white); font-weight: 500;">LICENSED &bull; BONDED &bull; INSURED &bull; ROC #367370</p>
+            <p style="letter-spacing: 0.05em; color: var(--text-dark); font-weight: 500;">LICENSED &bull; BONDED &bull; INSURED &bull; ROC #367370</p>
             <p style="color: var(--text-muted);">Sambrano Roofing &amp; Exterior LLC | CR-42 Roofing</p>
         </div>
     </div>

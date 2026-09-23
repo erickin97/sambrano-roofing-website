@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tucson Roofing Contractors | Sambrano Roofing & Exterior LLC</title>
-    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <link rel="icon" type="image/png" href="assets/logo/favicon-new.png">
+    <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
     <meta name="description" content="Sambrano Roofing & Exterior LLC is a licensed Tucson, AZ roofing contractor (ROC #367370, CR-42 Roofing) specializing in tile lift & reset, roof coatings, and full shingle roof systems.">
     <link rel="canonical" href="https://sambranoroofing.com/">
 
@@ -26,15 +27,15 @@
     <style>
         :root {
             --white: #FFFFFF;
-            --charcoal: #12161A;
-            --charcoal-muted: #1A1F26;
-            --deep-blue: #0A192F;
-            --accent-gold: #C9A227;
-            --accent-gold-hover: #AD8A20;
+            --charcoal: #111111;
+            --charcoal-muted: #F5F5F5;
+            --deep-blue: #2B2B2B;
+            --accent-gold: #F7941D;
+            --accent-gold-hover: #CA7917;
             --text-light: #F4F5F6;
-            --text-dark: #12161A;
-            --text-muted: #64748B;
-            --border-color: #2A3342;
+            --text-dark: #111111;
+            --text-muted: #5A5A5A;
+            --border-color: #E0E0E0;
             --font-sans: 'Inter', sans-serif;
             --font-heading: 'Lexend Deca', sans-serif;
             --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -49,8 +50,8 @@
         html {
             scroll-behavior: smooth;
             font-size: 16px;
-            background-color: var(--charcoal);
-            color: var(--text-light);
+            background-color: var(--white);
+            color: var(--text-dark);
         }
 
         body {
@@ -69,7 +70,7 @@
 
         p {
             font-weight: 300;
-            color: #94A3B8;
+            color: var(--text-muted);
         }
 
         a {
@@ -108,7 +109,7 @@
 
         .section-title {
             font-size: 2.5rem;
-            color: var(--white);
+            color: var(--text-dark);
             margin-bottom: 1.5rem;
         }
 
@@ -135,7 +136,7 @@
         .btn-primary:hover {
             background-color: var(--accent-gold-hover);
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px -6px rgba(201, 162, 39, 0.45);
+            box-shadow: 0 8px 20px -6px rgba(247, 148, 29, 0.45);
         }
 
         .btn-secondary {
@@ -151,6 +152,19 @@
             transform: translateY(-2px);
         }
 
+        /* The nav bar is now white, so the phone-number ghost button needs a
+           dark-on-white treatment distinct from the same class used in the
+           hero, which still sits over a dark photo/video. */
+        .nav-actions .btn-secondary {
+            color: var(--text-dark);
+            border-color: rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-actions .btn-secondary:hover {
+            border-color: var(--text-dark);
+            background-color: rgba(0, 0, 0, 0.04);
+        }
+
         /* Navigation */
         .nav-bar {
             position: fixed;
@@ -158,9 +172,9 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-            background-color: rgba(18, 22, 26, 0.85);
+            background-color: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
             transition: var(--transition);
         }
 
@@ -183,16 +197,14 @@
             flex-shrink: 0;
         }
 
-        /* Logo theme swap: defaults to the white knockout logo (used on the
-           white-on-transparent asset) for our dark sections; any future
-           light-background section just needs class="theme-light" and the
-           .logo-mark img automatically swaps to logo-color.png */
+        /* Single logo asset works on both light and dark surfaces, so both
+           branches of this theme-swap hook point to the same file. */
         .logo-mark {
-            content: url("assets/logo/logo-white.png");
+            content: url("assets/logo/sambrano-logo.png");
         }
 
         .theme-light .logo-mark {
-            content: url("assets/logo/logo-color.png");
+            content: url("assets/logo/sambrano-logo.png");
         }
 
         .brand-text {
@@ -204,7 +216,7 @@
             font-family: var(--font-heading);
             font-size: 1.25rem;
             font-weight: 700;
-            color: var(--white);
+            color: var(--text-dark);
             letter-spacing: -0.01em;
         }
 
@@ -225,11 +237,11 @@
         .nav-link {
             font-size: 0.85rem;
             font-weight: 400;
-            color: #94A3B8;
+            color: var(--text-dark);
         }
 
         .nav-link:hover {
-            color: var(--white);
+            color: var(--accent-gold);
         }
 
         .nav-actions {
@@ -285,7 +297,7 @@
             position: absolute;
             inset: 0;
             z-index: 2;
-            background: linear-gradient(135deg, rgba(10,25,47,0.74) 0%, rgba(18,22,26,0.64) 55%, rgba(18,22,26,0.75) 100%);
+            background: linear-gradient(135deg, rgba(17,17,17,0.74) 0%, rgba(17,17,17,0.64) 55%, rgba(17,17,17,0.75) 100%);
             pointer-events: none;
         }
 
@@ -433,7 +445,7 @@
         .metric-title {
             font-family: var(--font-heading);
             font-size: 1.15rem;
-            color: var(--white);
+            color: var(--text-dark);
             margin-bottom: 0;
         }
 
@@ -454,7 +466,7 @@
 
         .area-badge {
             font-size: 0.82rem;
-            color: var(--text-light);
+            color: var(--text-dark);
             background-color: var(--charcoal-muted);
             border: 1px solid var(--border-color);
             padding: 0.6rem 1.1rem;
@@ -492,7 +504,7 @@
         }
 
         .service-card:hover {
-            border-color: rgba(255, 255, 255, 0.15);
+            border-color: rgba(0, 0, 0, 0.15);
             transform: translateY(-4px);
         }
 
@@ -505,7 +517,7 @@
 
         .service-card h3 {
             font-size: 1.25rem;
-            color: var(--white);
+            color: var(--text-dark);
             margin-bottom: 1rem;
         }
 
@@ -539,9 +551,9 @@
         /* Real Roofing Work strip */
         .photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
         .photo-card { border-radius: 4px; overflow: hidden; border: 1px solid var(--border-color); background-color: var(--charcoal-muted); display: block; color: inherit; transition: var(--transition); }
-        .photo-card:hover { border-color: rgba(255, 255, 255, 0.15); transform: translateY(-4px); }
+        .photo-card:hover { border-color: rgba(0, 0, 0, 0.15); transform: translateY(-4px); }
         .photo-card img { width: 100%; height: 260px; object-fit: cover; display: block; }
-        .photo-caption { padding: 1rem 1.25rem; font-size: 0.95rem; font-family: var(--font-heading); font-weight: 600; color: var(--white); display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
+        .photo-caption { padding: 1rem 1.25rem; font-size: 0.95rem; font-family: var(--font-heading); font-weight: 600; color: var(--text-dark); display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
         .photo-caption .arrow { color: var(--accent-gold); font-weight: 400; }
 
         /* Projects Section */
@@ -659,7 +671,7 @@
             max-width: 960px;
             max-height: 88vh;
             overflow-y: auto;
-            background-color: var(--charcoal-muted);
+            background-color: var(--charcoal);
             border: 1px solid var(--border-color);
             border-radius: 6px;
             display: grid;
@@ -800,7 +812,7 @@
         .project-modal-desc {
             font-size: 0.92rem;
             font-weight: 300;
-            color: #94A3B8;
+            color: #B0B0B0;
             margin-bottom: 1.5rem;
         }
 
@@ -894,7 +906,7 @@
 
         .review-quote {
             font-size: 0.95rem;
-            color: #CBD5E1;
+            color: var(--text-muted);
             font-weight: 300;
             margin-bottom: 2rem;
             flex-grow: 1;
@@ -925,7 +937,7 @@
 
         .review-name {
             font-size: 0.9rem;
-            color: var(--white);
+            color: var(--text-dark);
             font-weight: 500;
         }
 
@@ -961,7 +973,7 @@
 
         .process-body h3 {
             font-size: 1.25rem;
-            color: var(--white);
+            color: var(--text-dark);
             margin-bottom: 0.75rem;
         }
 
@@ -972,7 +984,7 @@
         /* CTA / Contact Section */
         .contact-section {
             border-bottom: none;
-            background-color: var(--deep-blue);
+            background-color: var(--white);
             position: relative;
             overflow: hidden;
         }
@@ -987,7 +999,7 @@
 
         .contact-info h2 {
             font-size: 2.5rem;
-            color: var(--white);
+            color: var(--text-dark);
             margin-bottom: 1.5rem;
         }
 
@@ -1015,13 +1027,13 @@
         }
 
         .contact-detail-value {
-            color: var(--white);
+            color: var(--text-dark);
             font-size: 1rem;
         }
 
         .contact-form {
-            background-color: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background-color: var(--charcoal-muted);
+            border: 1px solid var(--border-color);
             border-radius: 8px;
             padding: 2.5rem;
             backdrop-filter: blur(8px);
@@ -1051,18 +1063,18 @@
         .form-group input,
         .form-group select,
         .form-group textarea {
-            background-color: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            background-color: var(--white);
+            border: 1px solid var(--border-color);
             border-radius: 4px;
             padding: 0.85rem 1rem;
-            color: var(--white);
+            color: var(--text-dark);
             font-family: var(--font-sans);
             font-size: 0.9rem;
         }
 
         .form-group input::placeholder,
         .form-group textarea::placeholder {
-            color: #64748B;
+            color: #9A9A9A;
         }
 
         .form-group input:focus,
@@ -1158,12 +1170,12 @@
 
         .footer-bottom p {
             font-size: 0.78rem;
-            color: var(--text-muted);
+            color: #94A3B8;
         }
 
         .footer-license {
             font-size: 0.78rem;
-            color: var(--text-muted);
+            color: #94A3B8;
         }
 
         /* Mobile nav toggle */
@@ -1180,7 +1192,7 @@
         .nav-toggle span {
             width: 22px;
             height: 2px;
-            background-color: var(--white);
+            background-color: var(--text-dark);
             transition: var(--transition);
         }
 
@@ -1247,7 +1259,7 @@
                 top: 90px;
                 left: 0;
                 width: 100%;
-                background-color: rgba(18, 22, 26, 0.98);
+                background-color: rgba(255, 255, 255, 0.98);
                 padding: 1.5rem 2rem;
                 gap: 1.25rem;
                 border-bottom: 1px solid var(--border-color);
@@ -1337,7 +1349,7 @@
       "telephone": "+1-520-554-1292",
       "email": "info@sambranoroofing.com",
       "url": "https://sambranoroofing.com/",
-      "image": "https://sambranoroofing.com/assets/logo/logo-color.png",
+      "image": "https://sambranoroofing.com/assets/logo/sambrano-logo.png",
       "areaServed": ["Tucson, AZ", "Marana, AZ", "Oro Valley, AZ", "Sahuarita, AZ", "Green Valley, AZ", "Vail, AZ", "Mount Lemmon, AZ", "Globe, AZ", "Casa Grande, AZ"],
       "address": {
         "@type": "PostalAddress",
@@ -1354,7 +1366,7 @@
     <nav class="nav-bar">
         <div class="container nav-container">
             <a href="#top" class="brand-logo">
-                <img class="logo-mark" src="assets/logo/logo-white.png" width="500" height="516" alt="SR Roofing logo">
+                <img class="logo-mark" src="assets/logo/sambrano-logo.png" width="1200" height="844" alt="Sambrano Roofing & Exterior LLC logo">
                 <span class="brand-text">
                     <span class="brand-name">Sambrano Roofing</span>
                     <span class="brand-sub">&amp; Exterior LLC</span>
@@ -1382,7 +1394,7 @@
          color tokens/container width only — no new CSS added, hero untouched. -->
     <div style="margin-top: 90px; background-color: var(--charcoal-muted); border-bottom: 1px solid var(--border-color); padding: 0.65rem 0;">
         <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.35rem 1.5rem;">
-            <p style="margin: 0; font-size: 0.78rem; letter-spacing: 0.05em; color: var(--white); font-weight: 500;">LICENSED &bull; BONDED &bull; INSURED &bull; ROC #367370</p>
+            <p style="margin: 0; font-size: 0.78rem; letter-spacing: 0.05em; color: var(--text-dark); font-weight: 500;">LICENSED &bull; BONDED &bull; INSURED &bull; ROC #367370</p>
             <p style="margin: 0; font-size: 0.78rem; color: var(--text-muted);">Sambrano Roofing &amp; Exterior LLC | CR-42 Roofing</p>
         </div>
     </div>
@@ -1414,8 +1426,8 @@
         </div>
         <div class="container">
             <div class="hero-content" id="hero-content">
-                <img class="hero-logo-badge logo-mark" src="assets/logo/logo-white.png" width="500" height="516" alt="SR Roofing logo">
-                <h1>Understand the Problem. Then Decide.</h1>
+                <img class="hero-logo-badge logo-mark" src="assets/logo/sambrano-logo.png" width="1200" height="844" alt="Sambrano Roofing & Exterior LLC logo">
+                <h1>Protecting What Matters Most.</h1>
                 <p>Sambrano Roofing &amp; Exterior LLC is family-owned and operated by Erick Sambrano, raised right here in Tucson. Before we recommend a repair or a replacement, we take the time to understand what's actually happening on your roof &mdash; so you can decide with real information, not just an estimate.</p>
                 <div class="hero-actions">
                     <a href="#contact" class="btn btn-primary">Request a Free Roof Inspection</a>
