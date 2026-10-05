@@ -1063,6 +1063,8 @@
         .form-group input,
         .form-group select,
         .form-group textarea {
+            width: 100%;
+            min-width: 0;
             background-color: var(--white);
             border: 1px solid var(--border-color);
             border-radius: 4px;
@@ -1113,6 +1115,110 @@
         .contact-form .btn-primary {
             width: 100%;
             margin-top: 0.5rem;
+        }
+
+        /* Submission states: button locked while sending, error notice if the
+           request fails, and an on-site confirmation that replaces the form
+           only after Netlify confirms it received the submission. */
+        .contact-form .btn[disabled] {
+            opacity: 0.65;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .contact-form .btn-primary[disabled]:hover {
+            background-color: var(--accent-gold);
+            transform: none;
+            box-shadow: none;
+        }
+
+        .form-alert {
+            margin-bottom: 1.25rem;
+            padding: 1rem 1.25rem;
+            background-color: var(--white);
+            border: 1px solid var(--border-color);
+            border-left: 3px solid var(--accent-gold);
+            border-radius: 4px;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+        }
+
+        .form-alert[hidden] {
+            display: none;
+        }
+
+        .form-alert strong {
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .form-alert p {
+            font-size: 0.9rem;
+            color: var(--text-dark);
+        }
+
+        .form-alert a {
+            color: inherit;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .form-success {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 1rem;
+            padding: 2rem 0;
+        }
+
+        .form-success:focus {
+            outline: none;
+        }
+
+        .contact-form.is-submitted > *:not(.form-success) {
+            display: none;
+        }
+
+        .contact-form.is-submitted > .form-success {
+            display: flex;
+        }
+
+        .form-success-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: var(--white);
+            border: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-success-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: none;
+            stroke: var(--accent-gold);
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .form-success h3 {
+            font-size: 1.6rem;
+            color: var(--text-dark);
+        }
+
+        .form-success p {
+            max-width: 420px;
+        }
+
+        .contact-form .form-success .btn-primary {
+            width: 100%;
+            max-width: 280px;
+            white-space: nowrap;
         }
 
         /* Footer */
@@ -1847,7 +1953,7 @@
                 </div>
             </div>
 
-            <form class="contact-form" name="estimate-request" method="POST" action="thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
+            <form class="contact-form" id="estimate-form" name="estimate-request" method="POST" action="/thank-you.html" data-netlify="true" netlify-honeypot="bot-field">
                 <input type="hidden" name="form-name" value="estimate-request">
 
                 <!-- Honeypot: real visitors never see or reach this field (removed from
@@ -1912,8 +2018,22 @@
                     <label for="message">Project Details</label>
                     <textarea id="message" name="message" rows="4" placeholder="Tell us about your roof or the issue you're seeing"></textarea>
                 </div>
+                <div class="form-alert" id="form-alert" role="alert" hidden>
+                    <strong>We couldn't send your request.</strong>
+                    <p>Nothing was lost &mdash; your answers are still in the form, so please try again. If it keeps happening, call or text us at <a href="tel:15205541292">(520) 554-1292</a> or email <a href="mailto:info@sambranoroofing.com">info@sambranoroofing.com</a>.</p>
+                </div>
                 <button type="submit" class="btn btn-primary">Request a Free Roof Inspection</button>
                 <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.85rem; text-align: center;">By submitting this form, you agree to our <a href="privacy-policy.html" style="color: var(--accent-gold); text-decoration: underline;">Privacy Policy</a> and <a href="terms-conditions.html" style="color: var(--accent-gold); text-decoration: underline;">Terms &amp; Conditions</a>.</p>
+
+                <div class="form-success" id="form-success" tabindex="-1" hidden>
+                    <div class="form-success-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+                    </div>
+                    <h3>Request received</h3>
+                    <p>Thank you &mdash; Sambrano Roofing &amp; Exterior LLC has received your request. We'll review the information you submitted and follow up with you.</p>
+                    <p>If your matter is urgent, you're welcome to call or text us directly.</p>
+                    <a href="tel:15205541292" class="btn btn-primary">Call (520) 554-1292</a>
+                </div>
             </form>
         </div>
     </section>
@@ -2335,6 +2455,78 @@
             if (matchingOption) {
                 select.value = matchingOption.value;
             }
+        })();
+    </script>
+
+    <!-- Estimate-form submission. Posts to Netlify Forms in the background (the
+         pattern Netlify documents) so the visitor never lands on a 404/blank page.
+         The confirmation appears ONLY when Netlify answers with a success status;
+         any failure shows an honest error and keeps what the visitor typed. If
+         JavaScript is unavailable, the form falls back to a normal POST to its
+         action page. -->
+    <script>
+        (function () {
+            const form = document.getElementById('estimate-form');
+            if (!form || !window.fetch || !window.FormData || !window.URLSearchParams || !window.AbortController) return;
+
+            const submitButton = form.querySelector('button[type="submit"]');
+            const errorBox = document.getElementById('form-alert');
+            const successBox = document.getElementById('form-success');
+            const idleLabel = submitButton.textContent;
+            let submitting = false;
+
+            function setSending(isSending) {
+                submitting = isSending;
+                submitButton.disabled = isSending;
+                submitButton.textContent = isSending ? 'Sending…' : idleLabel;
+                if (isSending) {
+                    form.setAttribute('aria-busy', 'true');
+                } else {
+                    form.removeAttribute('aria-busy');
+                }
+            }
+
+            function showSuccess() {
+                form.classList.add('is-submitted');
+                successBox.hidden = false;
+                successBox.focus({ preventScroll: true });
+                const reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                successBox.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+            }
+
+            function showError() {
+                setSending(false);
+                errorBox.hidden = false;
+            }
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                if (submitting) return;
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
+
+                errorBox.hidden = true;
+                setSending(true);
+
+                const controller = new AbortController();
+                const timeout = setTimeout(function () { controller.abort(); }, 20000);
+
+                fetch('/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(new FormData(form)).toString(),
+                    signal: controller.signal
+                }).then(function (response) {
+                    clearTimeout(timeout);
+                    if (!response.ok) throw new Error('Submission failed: HTTP ' + response.status);
+                    showSuccess();
+                }).catch(function () {
+                    clearTimeout(timeout);
+                    showError();
+                });
+            });
         })();
     </script>
 </body>
